@@ -30,7 +30,7 @@
             android:layout_marginLeft="10dp"
             android:adjustViewBounds="true"
             android:scaleType="fitXY"
-            android:src="@drawable/roompng"
+            android:src="@drawable/animehousepng"
             app:shapeAppearanceOverlay="@style/roundimageview"
             />
 

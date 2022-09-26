@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">DCE Desk</string>
+    <string name="app_info">The DCE Desk  app is here to help the college students through this app.\n
+We are Computer Science and  Engineering students of 20th batch, and with this simple app,
+we are trying to solve everyday problems of the college, we hope to build a strong  and
+efficient platform to connect and unite DCEians.</string>
+    <string name="thank">Thank you for your support and co-operation\n
+ Jai Hind!</string>
+    <string name="share_app">"Don't you know our college got it's own app, let's try this simple efficient solution to our everyday problem?\n
+Donload here."</string>
+    <string name="app_link">www.google.com</string>
 </resources>

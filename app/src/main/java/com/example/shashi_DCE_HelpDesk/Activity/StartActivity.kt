@@ -3,9 +3,10 @@ package com.example.shashi_DCE_HelpDesk.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.ImageView
 import android.widget.Toast
-import android.widget.Toolbar
 import com.example.shashi_DCE_HelpDesk.R
 
 class StartActivity : AppCompatActivity() {
@@ -33,7 +34,7 @@ class StartActivity : AppCompatActivity() {
             startActivity(intent)
         }
         councellingDetails.setOnClickListener {
-            val intent = Intent(this@StartActivity,CouncellingDetailsActivity::class.java)
+            val intent = Intent(this@StartActivity,CounselingDetailsActivity::class.java)
             startActivity(intent)
         }
 
@@ -42,5 +43,27 @@ class StartActivity : AppCompatActivity() {
     private fun setUpToolbar() {
         setSupportActionBar(toolbar)
         supportActionBar?.title = "DCE Desk"
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.starticon,menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
+        val id = item?.itemId
+       when(id){
+
+
+
+           R.id.starticon ->{
+
+               val intent = Intent(this@StartActivity,AppInfoActivity::class.java)
+               startActivity(intent)
+           }
+
+       }
+        return super.onOptionsItemSelected(item)
     }
 }
