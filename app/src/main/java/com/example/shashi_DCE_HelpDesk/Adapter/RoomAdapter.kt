@@ -1,17 +1,19 @@
 package com.example.shashi_DCE_HelpDesk.Adapter
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
+import com.example.shashi_DCE_HelpDesk.Activity.MapsActivity
 import com.example.shashi_DCE_HelpDesk.Model.RoomModel
 import com.example.shashi_DCE_HelpDesk.R
 import com.squareup.picasso.Picasso
-import org.w3c.dom.Text
 
 class RoomAdapter(val context: Context, val roomList :ArrayList<RoomModel>): RecyclerView.Adapter<RoomAdapter.roomViewHolder>() {
 
@@ -41,7 +43,21 @@ class RoomAdapter(val context: Context, val roomList :ArrayList<RoomModel>): Rec
 
 
         holder.location.setOnClickListener {
-            Toast.makeText(context,"Feature not available",Toast.LENGTH_SHORT).show()
+          //  Toast.makeText(context,"Feature not available",Toast.LENGTH_SHORT).show()
+
+
+            if(room.latLng ==null || room.latLng.equals("")){
+
+                Toast.makeText(context,"Not Available",Toast.LENGTH_LONG).show()
+
+
+            }
+            else{
+                val intent = Intent(context, MapsActivity::class.java)
+                intent.putExtra("location",room.latLng)
+                intent.putExtra("name",room.landMark)
+                context.startActivity(intent)
+            }
         }
 
     }

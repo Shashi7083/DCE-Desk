@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/parentHoliday"
+    android:layout_height="match_parent"
+
+    tools:context=".Fragments.HolidayListFragment">
+
+
+
+
+    <ScrollView
+        android:id="@+id/holidayscroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="@id/parentHoliday"
+         app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintVertical_bias="0.5">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp"
+            >
+
+            <Button
+                android:id="@+id/btnJan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                app:backgroundTint="@null"
+                android:background="#4C93E8"
+                android:layout_marginBottom="8dp"
+                android:textSize="18dp"
+                android:text="JANUARY"
+                android:textColor="@color/black"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:id="@+id/txtJan"
+                android:text="@string/jan"
+                android:layout_marginLeft="6dp"
+                />
+
+            <Button
+                android:id="@+id/btnfeb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                app:backgroundTint="@null"
+                android:background="#4C93E8"
+                android:layout_marginTop="10dp"
+                android:text="february"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp"
+                android:textSize="18dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                android:id="@+id/txtfeb"
+                android:visibility="gone"
+                android:text="@string/feb"
+                android:layout_marginLeft="6dp"
+                tools:ignore="DuplicateIds" />
+
+            <Button
+                android:id="@+id/btnmar"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                app:backgroundTint="@null"
+                android:background="#4C93E8"
+                android:text="MARCH"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp"
+                android:textSize="18dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                android:id="@+id/txtmar"
+                android:visibility="gone"
+                android:text="@string/mar"
+                android:layout_marginLeft="6dp"
+                />
+
+
+            <Button
+                android:id="@+id/btnapr"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                app:backgroundTint="@null"
+                android:background="#4C93E8"
+                android:text="April"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp"
+                android:textSize="18dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                android:id="@+id/txtapr"
+                android:visibility="gone"
+                android:text="@string/apr"
+                android:layout_marginLeft="6dp"
+                />
+
+
+            <Button
+                android:id="@+id/btnmay"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                app:backgroundTint="@null"
+                android:background="#4C93E8"
+                android:text="may"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp"
+                android:textSize="18dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                android:id="@+id/txtmay"
+                android:visibility="gone"
+                android:text="@string/may"
+                android:layout_marginLeft="6dp"
+                />
+
+            <Button
+                android:id="@+id/btnjun"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                app:backgroundTint="@null"
+                android:background="#4C93E8"
+                android:text="June"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp"
+                android:textSize="18dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:id="@+id/txtjun"
+                android:text="@string/jun"
+                android:layout_marginLeft="6dp"
+                />
+
+
+            <Button
+                android:id="@+id/btnjul"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                app:backgroundTint="@null"
+                android:background="#4C93E8"
+                android:text="july"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp"
+                android:textSize="18dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                android:id="@+id/txtjul"
+                android:visibility="gone"
+                android:text="@string/jul"
+                android:layout_marginLeft="6dp"
+                />
+
+            <Button
+                android:id="@+id/btnaug"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                app:backgroundTint="@null"
+                android:background="#4C93E8"
+                android:text="August"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp"
+                android:textSize="18dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                android:id="@+id/txtaug"
+                android:visibility="gone"
+                android:text="@string/aug"
+                android:layout_marginLeft="6dp"
+                />
+
+
+            <Button
+                android:id="@+id/btnsep"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                app:backgroundTint="@null"
+                android:background="#4C93E8"
+                android:text="september"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp"
+                android:textSize="18dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:id="@+id/txtsep"
+                android:text="@string/sep"
+                android:layout_marginLeft="6dp"
+                />
+
+
+            <Button
+                android:id="@+id/btnoct"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                app:backgroundTint="@null"
+                android:background="#4C93E8"
+                android:text="october"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp"
+                android:textSize="18dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                android:id="@+id/txtoct"
+                android:visibility="gone"
+                android:text="@string/oct"
+                android:layout_marginLeft="6dp"
+                />
+
+
+            <Button
+                android:id="@+id/btnnov"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                app:backgroundTint="@null"
+                android:background="#4C93E8"
+                android:text="November"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp"
+                android:textSize="18dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                android:id="@+id/txtnov"
+                android:visibility="gone"
+                android:text="@string/nov"
+                android:layout_marginLeft="6dp"
+                />
+
+            <Button
+                android:id="@+id/btndec"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                app:backgroundTint="@null"
+                android:background="#4C93E8"
+                android:text="decmber"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                android:id="@+id/txtdec"
+                android:visibility="gone"
+                android:text="@string/dec"
+                android:layout_marginLeft="6dp"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

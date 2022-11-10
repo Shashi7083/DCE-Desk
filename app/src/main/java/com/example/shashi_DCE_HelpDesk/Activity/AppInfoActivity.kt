@@ -4,7 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.Toolbar
 import com.example.shashi_DCE_HelpDesk.R
 
 class AppInfoActivity : AppCompatActivity() {

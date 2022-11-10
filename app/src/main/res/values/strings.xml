@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">DCE Desk</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+
     <string name="app_info">The DCE Desk  app is here to help the college students through this app.\n
 We are Computer Science and  Engineering students of 20th batch, and with this simple app,
 we are trying to solve everyday problems of the college, we hope to build a strong  and
@@ -9,4 +12,84 @@ efficient platform to connect and unite DCEians.</string>
     <string name="share_app">"Don't you know our college got it's own app, let's try this simple efficient solution to our everyday problem?\n
 Donload here."</string>
     <string name="app_link">www.google.com</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="jan">
+        <font color="#A80000">01 Jan</font>  -  New Year\n\n
+        <font color="#A80000">09 Jan</font>   -   Guru Govind Singh Jayanti\n\n
+        <font color="#A80000">15 Jan</font>   -   Makar Sankranti\n\n
+        <font color="#A80000">26 Jan</font>   -   Republic Day\n\n
+    </string>
+
+    <string name="feb">
+        <font color="#A80000">05 Feb</font>   -   Wasant Panchami and Saraswati Puja\n\n
+        <font color="#A80000">16 Feb </font>  -   Sant.RaviDas Jayanti\n
+    </string>
+
+    <string name="mar">
+        <font color="#A80000">01 Mar</font>   -   Maha Shiv Ratri\n\n
+        <font color="#A80000">16-19 Mar</font>   -   Holi and Shab-ae-Baarat\n\n
+        <font color="#A80000">22 Mar</font>   -   Bihar Diwas\n
+    </string>
+
+    <string name="apr">
+         <font color="#A80000">09 Apr</font>   -   Samrat Ashok Ahstami\n\n
+         <font color="#A80000">10 Apr</font>   -   Ramnawami\n\n
+         <font color="#A80000">14 Apr</font>   -   Dr.Bhim Rao Ambedkar Jayanti , Mahavir Jayanti\n\n
+         <font color="#A80000">15 Apr</font>   -   Good Friday\n\n
+         <font color="#A80000">23 Apr </font>  -   Veer Kunwar Singh Jayanti\n\n
+         <font color="#A80000">29 Apr </font>  -   Ramjan Ka antim jumma\n
+    </string>
+
+    <string name="may">
+        <font color="#A80000">01 May </font>  -   Labour Day\n\n
+        <font color="#A80000">03 - 04 May</font>   -   Ed-ul-Fitar(Eid)\n\n
+        <font color="#A80000">10 May </font>  -   Jaanki Nawami\n\n
+        <font color="#A80000">16 May </font>  -   Buddha Purnima\n
+    </string>
+
+
+    <string name="jun">
+        <font color="#A80000">14 June</font>   -  Kabir Jayanti\n
+
+    </string>
+
+    <string name="jul">
+          <font color="#A80000">10 - 11 July </font>  -  Ed-ul-Joha/Bakarid\n
+    </string>
+
+    <string name="aug">
+         <font color="#A80000">9 Aug </font>  -    Murraham (9,10) 2 Days\n
+         <font color="#A80000">12 Aug </font>  -   Raksha Bandhan\n\n
+         <font color="#A80000">15 Aug</font>   -   Independence Day\n\n
+         <font color="#A80000">19 Aug </font>  -   Shri Krishna Janmashtami\n
+    </string>
+
+    <string name="sep">
+        <font color="#A80000">9 Sep</font>    -   Anant-Chaturdashi\n\n
+         <font color="#A80000">26 Sep </font>  -   Durga Puja Kalash Sthapana\n
+    </string>
+
+    <string name="oct">
+          <font color="#A80000">02 - 06 Oct</font>  -   Mahatma Gandhi Jayanti / Durga Puja\n\n
+         <font color="#A80000">09 Oct </font>  -   Hajrat Mohammad Saheb Birthday\n\n
+         <font color="#A80000">24 Oct-01 Nov</font>  -   Diwali and Chitragupt Puja , Bhai Duj and Chhat Puja\n
+    </string>
+
+
+    <string name="nov">
+          <font color="#A80000">24 Oct -01 Nov </font> -   Diwali and Chitragupt Puja , Bhai Duj and Chhat Puja\n\n
+        <font color="#A80000">08 Nov</font>   -   Gurunana Jayanti\n
+    </string>
+
+
+    <string name="dec">
+        <font color="#A80000">03 Dec </font>  -   Dr Rajendra Prasad Jayanti\n\n
+         <font color="#A80000">24 - 25 Dec</font>  -  Christmas\n
+    </string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+
 </resources>

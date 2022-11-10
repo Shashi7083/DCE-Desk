@@ -1,17 +1,12 @@
 package com.example.shashi_DCE_HelpDesk.Activity
 
-import android.app.Activity
 import android.app.AlertDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.Settings
 import android.view.View
-import android.widget.ProgressBar
-import android.widget.RelativeLayout
 import android.widget.Toast
-import android.widget.Toolbar
-import androidx.core.app.ActivityCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.android.volley.Request
@@ -21,28 +16,33 @@ import com.example.shashi_DCE_HelpDesk.Adapter.RoomAdapter
 import com.example.shashi_DCE_HelpDesk.Model.RoomModel
 import com.example.shashi_DCE_HelpDesk.R
 import com.example.shashi_DCE_HelpDesk.util.ConnectionManager
+import com.facebook.shimmer.ShimmerFrameLayout
 
 class MainActivity : AppCompatActivity() {
 
     lateinit var roomRecycler :RecyclerView
- lateinit var relativeLayout: RelativeLayout
- lateinit var progressBar: ProgressBar
     lateinit var roomAdapter : RoomAdapter
     lateinit var toolbar: androidx.appcompat.widget.Toolbar
+
+    lateinit var shimmerLayout : ShimmerFrameLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-      // supportActionBar?.hide()
+
         toolbar = findViewById(R.id.mainToolbar)
         roomRecycler = findViewById(R.id.roomRecycler)
-        relativeLayout = findViewById(R.id.relativeLayout)
-        progressBar = findViewById(R.id.progressBar)
+
         roomRecycler.layoutManager= LinearLayoutManager(this@MainActivity)
-        relativeLayout.visibility = View.VISIBLE
+
+
+        shimmerLayout = findViewById(R.id.shimmerLayout)
+
 
        setUptoolbar()
         val roomList = arrayListOf<RoomModel>()
+        roomAdapter = RoomAdapter(this@MainActivity, roomList)
+
 
         if(ConnectionManager().checkConnectivity(this@MainActivity)) {
 
@@ -74,13 +74,18 @@ class MainActivity : AppCompatActivity() {
                         roomList.add(roomObject)
 
                     }
-                    relativeLayout.visibility = View.GONE
-                    roomAdapter = RoomAdapter(this@MainActivity, roomList)
+
                     roomRecycler.adapter = roomAdapter
+                    shimmerLayout.startShimmer()
+                    shimmerLayout.visibility = View.GONE
+
+                  roomAdapter.notifyDataSetChanged()
+                    roomRecycler.visibility = View.VISIBLE
+
 
                 },
                 { error ->
-                    Toast.makeText(this@MainActivity, error.toString(), Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@MainActivity, "Please Wait ", Toast.LENGTH_SHORT).show()
                     finish()
                 }
             )
@@ -100,7 +105,7 @@ class MainActivity : AppCompatActivity() {
             dialog.setNegativeButton("Exit"){
                 text,listner->
 //                ActivityCompat.finishAffinity(this@MainActivity)
-                val intent =  Intent(this@MainActivity,StartActivity::class.java)
+                val intent =  Intent(this@MainActivity, StartActivity::class.java)
                 startActivity(intent)
             }
             dialog.create()
@@ -110,9 +115,19 @@ class MainActivity : AppCompatActivity() {
 
     fun setUptoolbar(){
         setSupportActionBar(toolbar)
-        supportActionBar?.title = "DCE Desk - GetNest"
+    //    Objects.requireNonNull(supportActionBar)?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.title = ""
     }
 
+    override fun onPause() {
+        shimmerLayout.startShimmer()
+        super.onPause()
+    }
+
+    override fun onResume() {
+        shimmerLayout.startShimmer()
+        super.onResume()
+    }
 
 }
 

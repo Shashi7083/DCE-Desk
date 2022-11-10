@@ -1,7 +1,5 @@
 package com.example.shashi_DCE_HelpDesk.Model
 
-import com.google.android.gms.maps.model.LatLng
-
 data class RoomModel(
     val id :String,
     val latLng :String?,

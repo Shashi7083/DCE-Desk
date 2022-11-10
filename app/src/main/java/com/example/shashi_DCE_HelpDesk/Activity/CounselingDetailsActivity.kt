@@ -1,54 +1,129 @@
 package com.example.shashi_DCE_HelpDesk.Activity
 
+import android.annotation.SuppressLint
+import android.graphics.Color
 import android.os.Bundle
-import android.view.MotionEvent
-import android.view.ScaleGestureDetector
-import android.widget.ImageView
-import android.widget.Toolbar
+import android.view.MenuItem
+import android.view.View
+import android.widget.FrameLayout
 import androidx.appcompat.app.AppCompatActivity
+import com.example.shashi_DCE_HelpDesk.Fragments.*
 import com.example.shashi_DCE_HelpDesk.R
-import kotlin.math.max
-import kotlin.math.min
+import com.google.android.material.appbar.AppBarLayout
 
 
 class CounselingDetailsActivity : AppCompatActivity() {
 
    lateinit var  toolbar: androidx.appcompat.widget.Toolbar
-    private lateinit var scaleGestureDetector: ScaleGestureDetector
-    private var scaleFactor = 1.0f
-    private lateinit var imageView: ImageView
+   lateinit var appbar : AppBarLayout
+   lateinit var frameLayout :FrameLayout
+   var key :String = ""
 
+
+
+        @SuppressLint("MissingInflatedId")
         override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_councelling_details)
 
-            toolbar = findViewById(R.id.councToolbar)
-            imageView = findViewById(R.id.councellingImg)
+
+            frameLayout = findViewById(R.id.frameLayout)
+            toolbar = findViewById(R.id.counselingToolbar)
+            appbar = findViewById(R.id.counselingAppbar)
+
+
             setUpToolbar()
 
-           // scaleGestureDetector = ScaleGestureDetector(this, ScaleListener())
+
+
+
+            key = intent.getStringExtra("data").toString()
+
+            val transaction = supportFragmentManager.beginTransaction()
+
+            if (getSupportActionBar() != null){
+                getSupportActionBar()?.setDisplayHomeAsUpEnabled(true);
+                getSupportActionBar()?.setDisplayShowHomeEnabled(true);
+            }
+
+//Toast.makeText(this@CounselingDetailsActivity,key,Toast.LENGTH_LONG).show()
+
+            if(key.equals("Counseling")){
+                  supportActionBar?.title="Counseling "
+                 val  fragment = CounselingFragment()
+                transaction.replace(R.id.frameLayout,fragment)
+                transaction.commit()
+            }
+
+            if(key.equals("Student Search")){
+               // supportActionBar?.title = "Student Search"
+                appbar.visibility = View.GONE
+                val fragment = StudentFragment()
+                transaction.replace(R.id.frameLayout,fragment)
+                transaction.commit()
+            }
+
+            if(key.equals("Faculty Search")){
+                supportActionBar?.title="Faculty"
+                val  fragment = FacultyFragment()
+                transaction.replace(R.id.frameLayout,fragment)
+                transaction.commit()
+            }
+
+            if(key.equals("Syllabus")){
+                supportActionBar?.title="Syllabus"
+                val  fragment = SyllabusFragment()
+                transaction.replace(R.id.frameLayout,fragment)
+                transaction.commit()
+            }
+
+            if(key.equals("Holidays")){
+                supportActionBar?.title="Holidays 2022"
+                //appbar.visibility = View.GONE
+
+//                val  fragment = HolidayFragment()
+                val fragment = HolidayListFragment()
+                transaction.replace(R.id.frameLayout,fragment)
+                transaction.commit()
+            }
+
+            if(key.equals("Placements")){
+                supportActionBar?.title="Placements"
+                val  fragment = PlacementFragment()
+                transaction.replace(R.id.frameLayout,fragment)
+                transaction.commit()
+            }
+
+            if(key.equals("Queries")){
+                supportActionBar?.title="Queries"
+                val  fragment = QueriesFragment()
+                transaction.replace(R.id.frameLayout,fragment)
+                transaction.commit()
+            }
+
+
+
+
+
+
+
+
 
     }
-    //For Image Zoom
-//
-//    override fun onTouchEvent(motionEvent: MotionEvent): Boolean {
-//        scaleGestureDetector.onTouchEvent(motionEvent)
-//        return true
-//    }
-//    private inner class ScaleListener : ScaleGestureDetector.SimpleOnScaleGestureListener() {
-//        override fun onScale(scaleGestureDetector: ScaleGestureDetector): Boolean {
-//            scaleFactor *= scaleGestureDetector.scaleFactor
-//            scaleFactor = max(0.1f, min(scaleFactor, 10.0f))
-//            imageView.scaleX = scaleFactor
-//            imageView.scaleY = scaleFactor
-//            return true
-//        }
-//    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        // handle arrow click here
+        if (item.getItemId() === android.R.id.home) {
+            finish() // close this activity and return to preview activity (if there is any)
+        }
+        return super.onOptionsItemSelected(item)
+    }
 
     fun setUpToolbar(){
         setSupportActionBar(toolbar)
-        supportActionBar?.title = "Document List"
-
+        supportActionBar?.title=""
     }
+
+
 
 }

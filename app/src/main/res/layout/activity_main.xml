@@ -14,36 +14,61 @@
             android:layout_height="wrap_content"
             android:elevation="0dp"
             android:id="@+id/appbar"
+            app:elevation="0dp"
+            android:background="@color/purple_500"
             android:theme="@style/ThemeOverlay.AppCompat.Dark"
             tools:ignore="MissingConstraints">
 
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/mainToolbar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#FF6200EE"
-                android:minHeight="?attr/actionBarSize"
-                app:layout_scrollFlags="scroll|enterAlways"
-                tools:ignore="MissingConstraints" />
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/mainToolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:contentInsetStart="0dp"
+                    app:contentInsetStartWithNavigation="0dp"
+                    app:layout_collapseMode="pin"
+                    android:minHeight="?attr/actionBarSize"
+                    app:layout_scrollFlags="scroll|enterAlways"
+                    app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light"
+                    tools:ignore="MissingConstraints" >
+
+
+
+
+                </androidx.appcompat.widget.Toolbar>
+
+
+
 
         </com.google.android.material.appbar.AppBarLayout>
 
 
-    <RelativeLayout
-        android:id="@+id/relativeLayout"
 
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
-        >
-        <ProgressBar
-            android:layout_width="wrap_content"
+        android:layout_marginTop="?attr/actionBarSize"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/progressBar"
-            android:layout_centerInParent="true"
-            />
+            android:orientation="vertical">
 
-    </RelativeLayout>
+            <!--add  several shimmer placeholder layout -->
+
+            <include layout="@layout/shimmer_layout"></include>
+            <include layout="@layout/shimmer_layout"></include>
+            <include layout="@layout/shimmer_layout"></include>
+            <include layout="@layout/shimmer_layout"></include>
+            <include layout="@layout/shimmer_layout"></include>
+            <include layout="@layout/shimmer_layout"></include>
+            <include layout="@layout/shimmer_layout"></include>
+
+
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/roomRecycler"
@@ -51,6 +76,7 @@
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         tools:ignore="MissingConstraints"
+        android:visibility="gone"
         tools:listitem="@layout/room_view_details" />
 
 

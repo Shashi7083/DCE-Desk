@@ -13,6 +13,11 @@
         <entry key="app/src/main/res/layout/activity_info.xml" value="0.1734375" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2957427536231884" />
         <entry key="app/src/main/res/layout/activity_start.xml" value="0.4" />
+        <entry key="app/src/main/res/layout/fragment_counseling.xml" value="0.2957427536231884" />
+        <entry key="app/src/main/res/layout/fragment_faculty.xml" value="0.2957427536231884" />
+        <entry key="app/src/main/res/layout/fragment_placement.xml" value="0.2957427536231884" />
+        <entry key="app/src/main/res/layout/fragment_queries.xml" value="0.2957427536231884" />
+        <entry key="app/src/main/res/layout/fragment_student.xml" value="0.2957427536231884" />
         <entry key="app/src/main/res/layout/room_view_details.xml" value="0.2957427536231884" />
         <entry key="app/src/main/res/menu/starticon.xml" value="0.3234375" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/Dce_Desk.xml" value="0.295" />
