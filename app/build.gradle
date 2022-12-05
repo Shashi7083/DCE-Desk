@@ -7,10 +7,12 @@ plugins {
 android {
     compileSdk 32
 
+
+
     defaultConfig {
-        applicationId "com.example.shashi_DCE_HelpDesk"
+        applicationId "com.shashi.shashi_dce_desk"
         minSdk 21
-        targetSdk 32
+        targetSdk 28
         versionCode 1
         versionName "1.0"
 

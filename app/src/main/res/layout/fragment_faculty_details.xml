@@ -8,7 +8,7 @@
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/imgfacultydetails"
-        android:layout_width="250dp"
+        android:layout_width="210dp"
         android:layout_height="200dp"
         android:layout_margin="5dp"
         android:layout_marginTop="4dp"
@@ -44,7 +44,7 @@
                 android:id="@+id/barrier5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:barrierDirection="bottom"
+                app:barrierDirection="top"
                 app:constraint_referenced_ids="email"
                 tools:layout_editor_absoluteY="506dp" />
 
@@ -52,7 +52,7 @@
                 android:id="@+id/barrier4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:barrierDirection="bottom"
+                app:barrierDirection="top"
                 app:constraint_referenced_ids="department"
                 tools:layout_editor_absoluteY="506dp" />
 
@@ -60,7 +60,7 @@
                 android:id="@+id/barrier3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:barrierDirection="bottom"
+                app:barrierDirection="top"
                 app:constraint_referenced_ids="designation"
                 tools:layout_editor_absoluteY="506dp" />
 
@@ -68,16 +68,18 @@
                 android:id="@+id/barrier2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:barrierDirection="bottom"
+                app:barrierDirection="top"
                 app:constraint_referenced_ids="name"
                 tools:layout_editor_absoluteY="212dp" />
 
             <TextView
+                android:textColor="@color/black"
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="5dp"
+                android:textStyle="bold"
                 android:text="Name : "
                 android:textSize="15sp"
                 app:layout_constraintLeft_toLeftOf="@id/cparent"
@@ -88,7 +90,7 @@
                 android:id="@+id/barrier6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:barrierDirection="bottom"
+                app:barrierDirection="top"
                 app:constraint_referenced_ids="phone"
                 tools:layout_editor_absoluteY="506dp" />
 
@@ -96,7 +98,7 @@
                 android:id="@+id/barrier7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:barrierDirection="bottom"
+                app:barrierDirection="top"
                 app:constraint_referenced_ids="website"
                 tools:layout_editor_absoluteY="506dp" />
 
@@ -104,7 +106,7 @@
                 android:id="@+id/barrier8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:barrierDirection="bottom"
+                app:barrierDirection="top"
                 app:constraint_referenced_ids="experties"
                 tools:layout_editor_absoluteY="506dp" />
 
@@ -126,13 +128,14 @@
                 app:layout_constraintTop_toTopOf="@+id/textView" />
 
             <TextView
-
+                android:textColor="@color/black"
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="5dp"
                 android:text="Designation : "
+                android:textStyle="bold"
                 android:textSize="15sp"
                 app:layout_constraintLeft_toLeftOf="@id/cparent"
                 app:layout_constraintTop_toBottomOf="@+id/name" />
@@ -156,6 +159,7 @@
 
 
             <TextView
+                android:textColor="@color/black"
                 android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -163,6 +167,7 @@
                 android:layout_marginTop="5dp"
                 android:text="Department : "
                 android:textSize="15sp"
+                android:textStyle="bold"
                 app:layout_constraintLeft_toLeftOf="@id/cparent"
                 app:layout_constraintTop_toBottomOf="@+id/designation" />
 
@@ -183,6 +188,7 @@
 
 
             <TextView
+                android:textColor="@color/black"
                 android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -190,7 +196,7 @@
                 android:layout_marginTop="5dp"
                 android:text="Email : "
                 android:textSize="15sp"
-
+                android:textStyle="bold"
                 app:layout_constraintLeft_toLeftOf="@id/cparent"
                 app:layout_constraintTop_toBottomOf="@+id/department" />
 
@@ -201,16 +207,19 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:text=""
+                android:linksClickable="true"
                 app:layout_constrainedWidth="true"
                 app:layout_constraintHorizontal_bias="1"
                 app:layout_constraintWidth_percent="0.8"
                 android:textSize="15sp"
                 android:textStyle="bold"
+                android:drawableLeft="@drawable/ic_mail"
                 app:layout_constraintStart_toEndOf="@+id/textView4"
                 app:layout_constraintTop_toTopOf="@+id/textView4" />
 
 
             <TextView
+                android:textColor="@color/black"
                 android:id="@+id/textView5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -218,7 +227,7 @@
                 android:layout_marginTop="5dp"
                 android:text="Phone : "
                 android:textSize="15sp"
-
+                android:textStyle="bold"
                 app:layout_constraintLeft_toLeftOf="@id/cparent"
                 app:layout_constraintTop_toBottomOf="@+id/email" />
 
@@ -233,13 +242,15 @@
                 app:layout_constraintHorizontal_bias="1"
                 app:layout_constraintWidth_percent="0.8"
                 android:textSize="15sp"
+                android:linksClickable="true"
+              android:drawableLeft="@drawable/ic_phone"
                 android:textStyle="bold"
                 app:layout_constraintStart_toEndOf="@+id/textView5"
                 app:layout_constraintTop_toTopOf="@+id/textView5" />
 
 
             <TextView
-
+android:textColor="@color/black"
                 android:id="@+id/textView7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -247,10 +258,12 @@
                 android:layout_marginTop="5dp"
                 android:text="Website : "
                 android:textSize="15sp"
+                android:textStyle="bold"
                 app:layout_constraintLeft_toLeftOf="@id/cparent"
                 app:layout_constraintTop_toBottomOf="@+id/phone" />
 
             <TextView
+                android:textColor="@color/black"
                 android:id="@+id/textView6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -258,26 +271,26 @@
                 android:layout_marginTop="5dp"
                 android:text="Subject Experties : "
                 android:textSize="15sp"
+                android:textStyle="bold"
                 app:layout_constraintLeft_toLeftOf="@id/cparent"
                 app:layout_constraintTop_toBottomOf="@id/website"
                 tools:layout_editor_absoluteY="131dp" />
 
 
             <TextView
-                android:id="@+id/type"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
+                android:textSize="16sp"
                 android:text="Permanent"
-                android:textColor="#38D00E"
-                android:textSize="15sp"
-                android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/experties" />
-
+                app:layout_constraintTop_toBottomOf="@+id/experties"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:id="@+id/type"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                />
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline2"
                 android:layout_width="wrap_content"
@@ -296,25 +309,26 @@
                 android:textSize="15sp"
                 app:layout_constrainedWidth="true"
                 app:layout_constraintHorizontal_bias="1"
-                app:layout_constraintWidth_percent="0.8"
+                app:layout_constraintWidth_percent="0.78"
                 android:textStyle="bold"
+                android:autoLink="web"
+                android:linksClickable="true"
                 app:layout_constraintStart_toEndOf="@+id/textView7"
                 app:layout_constraintTop_toTopOf="@id/textView7" />
 
             <TextView
                 android:id="@+id/experties"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
                 android:text=""
-                app:layout_constrainedWidth="true"
-                app:layout_constraintHorizontal_bias="1"
-                app:layout_constraintWidth_percent="0.8"
                 android:textSize="15sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="@+id/textView6"
-                app:layout_constraintStart_toEndOf="@+id/textView6"
-                app:layout_constraintTop_toTopOf="@+id/textView6" />
+                app:layout_constraintStart_toStartOf="@+id/textView6"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView6"
+                 />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

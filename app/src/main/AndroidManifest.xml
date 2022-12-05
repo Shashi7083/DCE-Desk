@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.shashi_DCE_HelpDesk">
+    package="com.example.shashi_dce_desk">
 
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -9,6 +9,12 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+
+    <uses-sdk android:minSdkVersion="21"
+        android:targetSdkVersion="28"/>
 
     <application
         android:allowBackup="true"
@@ -19,6 +25,7 @@
         android:roundIcon="@mipmap/clgicon_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar"
+        android:requestLegacyExternalStorage="true"
         tools:targetApi="31">
 
         <!--
@@ -37,17 +44,17 @@
             android:value="${MAPS_API_KEY}" />
 
         <activity
-            android:name=".Activity.MapsActivity"
+            android:name="com.shashi.shashi_dce_desk.Activity.MapsActivity"
             android:exported="false"
             android:label="@string/title_activity_maps" />
         <activity
-            android:name=".Activity.AppInfoActivity"
+            android:name="com.shashi.shashi_dce_desk.Activity.AppInfoActivity"
             android:exported="false" />
         <activity
-            android:name=".Activity.CounselingDetailsActivity"
+            android:name="com.shashi.shashi_dce_desk.Activity.CounselingDetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".Activity.StartActivity"
+            android:name="com.shashi.shashi_dce_desk.Activity.StartActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -56,7 +63,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Activity.MainActivity"
+            android:name="com.shashi.shashi_dce_desk.Activity.MainActivity"
             android:exported="true"
             tools:ignore="MissingClass" />
     </application>

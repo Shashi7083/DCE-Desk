@@ -7,44 +7,46 @@
     android:background="#fff"
     tools:context=".Fragments.semesterSyllabusFragment">
 
-    <TextView
-        android:id="@+id/sem_value"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:padding="5dp"
-        android:shadowColor="#5613A7"
-
-        android:shadowDx="0.0"
-        android:shadowDy="0.0"
-        android:shadowRadius="40"
-        android:text="B.Tech"
-        android:textColor="#5613A7"
-
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="40dp"
-        android:layout_marginBottom="40dp"
-        app:layout_constraintTop_toBottomOf="@id/sem_value"
+
+
         >
+
+
+        <TextView
+            android:id="@+id/sem_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:shadowColor="#5613A7"
+
+            android:shadowDx="0.0"
+            android:shadowDy="0.0"
+            android:shadowRadius="40"
+            android:text="B.Tech"
+            android:textColor="#5613A7"
+
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <WebView
             android:id="@+id/semSyllabusView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-           app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginBottom="55dp"
+            app:layout_constraintTop_toBottomOf="@+id/sem_value"
+            app:layout_constraintVertical_bias="0.0"
             tools:ignore="NotSibling" />
 
 

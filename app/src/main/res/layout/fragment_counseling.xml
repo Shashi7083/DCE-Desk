@@ -31,16 +31,36 @@
             app:layout_constraintStart_toStartOf="parent"
             tools:ignore="MissingConstraints" />
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+         android:visibility="gone"
+            android:id="@+id/dList"
+            >
+
         <ImageView
             android:id="@+id/documentsList"
             android:layout_width="match_parent"
             android:layout_height="500dp"
             android:background="#3E85D8"
             android:scaleType="fitStart"
-            android:visibility="gone"
             android:src="@drawable/documentrequiredpng"
             tools:ignore="MissingConstraints"/>
 
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintRight_toRightOf="@id/dList"
+                app:layout_constraintBottom_toBottomOf="@id/dList"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/fdoc"
+                app:backgroundTint="#000000"
+                android:src="@drawable/downloadbtn"
+
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <Button
             android:id="@+id/medicalFormat"
@@ -56,16 +76,38 @@
             android:layout_marginRight="6dp"
             android:textColor="@color/white"
             />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/medicalconst"
+            android:visibility="gone"
+
+            >
         <ImageView
             android:id="@+id/medical"
             android:layout_width="match_parent"
             android:layout_height="500dp"
             android:background="#3E85D8"
             android:scaleType="fitStart"
-            android:visibility="gone"
+
             android:src="@drawable/medical_format"
             tools:ignore="MissingConstraints"/>
 
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintRight_toRightOf="@id/medicalconst"
+                app:layout_constraintBottom_toBottomOf="@id/medicalconst"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/fmedical"
+                app:backgroundTint="#000000"
+                android:src="@drawable/downloadbtn"
+
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
         <Button
             android:id="@+id/antiRagging"
             android:layout_width="match_parent"
