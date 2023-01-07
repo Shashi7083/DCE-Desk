@@ -130,7 +130,79 @@ class semesterSyllabusFragment : Fragment() {
             semSyllabusView.loadUrl(url)
         }
 
+        if(value.equals("Civil - V Sem")){
+            url = "file:///android_asset/civil/ce5.html"
+            semSyllabusView.settings.javaScriptEnabled = true
+            semSyllabusView.settings.builtInZoomControls= true
+            semSyllabusView.loadUrl(url)
+        }
 
+        if(value.equals("EEE - I Sem")){
+            url = "file:///android_asset/eee/eee1.html"
+            semSyllabusView.settings.javaScriptEnabled = true
+            semSyllabusView.settings.builtInZoomControls= true
+            semSyllabusView.loadUrl(url)
+        }
+
+        if(value.equals("EEE - II Sem")){
+            url = "file:///android_asset/eee/eee2.html"
+            semSyllabusView.settings.javaScriptEnabled = true
+            semSyllabusView.settings.builtInZoomControls= true
+            semSyllabusView.loadUrl(url)
+        }
+
+        if(value.equals("EEE - III Sem")){
+            url = "file:///android_asset/eee/eee3.html"
+            semSyllabusView.settings.javaScriptEnabled = true
+            semSyllabusView.settings.builtInZoomControls= true
+            semSyllabusView.loadUrl(url)
+        }
+
+        if(value.equals("EEE - IV Sem")){
+            url = "file:///android_asset/eee/eee4.html"
+            semSyllabusView.settings.javaScriptEnabled = true
+            semSyllabusView.settings.builtInZoomControls= true
+            semSyllabusView.loadUrl(url)
+        }
+        if(value.equals("EEE - V Sem")){
+            url = "file:///android_asset/eee/eee5.html"
+            semSyllabusView.settings.javaScriptEnabled = true
+            semSyllabusView.settings.builtInZoomControls= true
+            semSyllabusView.loadUrl(url)
+        }
+
+        if(value.equals("ME - I Sem")){
+            url = "file:///android_asset/mech/mech1.html"
+            semSyllabusView.settings.javaScriptEnabled = true
+            semSyllabusView.settings.builtInZoomControls= true
+            semSyllabusView.loadUrl(url)
+        }
+
+        if(value.equals("ME - II Sem")){
+            url = "file:///android_asset/mech/mech2.html"
+            semSyllabusView.settings.javaScriptEnabled = true
+            semSyllabusView.settings.builtInZoomControls= true
+            semSyllabusView.loadUrl(url)
+        }
+
+        if(value.equals("ME - III Sem")){
+            url = "file:///android_asset/mech/mech3.html"
+            semSyllabusView.settings.javaScriptEnabled = true
+            semSyllabusView.settings.builtInZoomControls= true
+            semSyllabusView.loadUrl(url)
+        }
+        if(value.equals("ME - IV Sem")){
+            url = "file:///android_asset/mech/mech4.html"
+            semSyllabusView.settings.javaScriptEnabled = true
+            semSyllabusView.settings.builtInZoomControls= true
+            semSyllabusView.loadUrl(url)
+        }
+        if(value.equals("ME - V Sem")){
+            url = "file:///android_asset/mech/mech5.html"
+            semSyllabusView.settings.javaScriptEnabled = true
+            semSyllabusView.settings.builtInZoomControls= true
+            semSyllabusView.loadUrl(url)
+        }
 
 
 

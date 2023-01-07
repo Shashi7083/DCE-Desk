@@ -1,0 +1,403 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of Page -->
+    <title>Mech sem4</title>
+</head>
+
+<body id="top" oncontextmenu="return false" onselectstart="return false" ondragstart="return false"></body>
+
+<style type="text/css">
+    b {
+        /* below text is for Changing Heading of Syllaus inside button box */
+        color: rgb(72, 0, 255);
+        line-height: 2px;
+        font-size: medium;
+    }
+
+    .button {
+        background: #50ab7f;
+        width: 90%;
+        height: 60px;
+        border-radius: 10px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        color: rgb(255, 255, 255);
+
+        margin: auto;
+        display: block;
+        text-transform: none;
+        border: 1px solid transparent;
+    }
+
+    .button:active {
+        background-color: #0a82fb;
+    }
+
+
+    a {
+        text-decoration: none;
+    }
+
+    p {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #6e3062;
+        line-height: 20px;
+        font-size: 12px;
+        color: #34495e;
+    }
+
+    hr {
+        margin-top: -25px;
+    }
+
+    span {
+        color: rgb(0, 166, 255);
+        padding: 5px;
+    }
+
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #50ab7f;
+        color: rgb(255, 255, 255);
+        text-align: center;
+    }
+</style>
+
+<br />
+<br />
+
+<script type="text/javascript">
+    function toggleMe(a) {
+        var e = document.getElementById(a);
+        if (!e) return true;
+        if (e.style.display != "none") {
+            e.style.display = "none"
+        } else {
+            document.querySelectorAll(".text").forEach(b => b.style.display = "none");
+            e.style.display = "block"
+        }
+        return true;
+    }
+</script>
+
+
+
+<input type="button" onclick="return toggleMe('1')" value="Fluid Mechanics" class="button"><br>
+<span id="1" style='display:none'>
+    <p> <br><b>Fluid Mechanics</b><br />
+
+        <b>Objectives:</b><br />
+        1. To learn about the application of mass and momentum conservation laws for fluid flows<br />
+        2. To understand the importance of dimensional analysis<br />
+        3. To obtain the velocity and pressure variations in various types of simple flows<br />
+        4. To analyze the flow in water pumps and turbines.
+        Contents:<br /><br />
+
+        Module: 1 (8 lectures)<br />
+        Definition of fluid, Units and dimensions, Newton’s law of viscosity, Properties of fluids, mass,
+        density, specific volume, specific gravity, viscosity, surface tension and capillarity, vapor pressure,
+        compressibility and bulk modulus.Hydrostatics; fluid force on plane and curved surfaces,
+        manometers, buoyancy, uniformly accelerated motion.<br /><br />
+
+        Module: 2 (4 lectures)<br />
+        Kinematics of fluid flow: Generalized continuity equation, Irrotational motion and solution to
+        Laplace equation. Concept of stream lines, Equipotential Lines, Flow Nets.<br /><br />
+
+        Module: 3 (6 lectures)<br />
+        Dynamics of fluid flow: Control volume and control surface, application of continuity equation and
+        momentum equation, Bernoulli’s equation and its applications.<br /><br />
+
+        Module: 4 (4 lectures)<br />
+        Concept of boundary layer, boundary layer thickness, Displacement thickness, momentum thickness,
+        energy thickness.<br /><br />
+
+        Module: 5 (8 lectures)<br />
+        Laminar viscous flow through circular conduits, Couette and Poisuielle flow, Turbulent flow through
+        pipes, Darcy Weisbach equation, friction factor for smooth and rough pipes, Moody’s diagram.
+        <br /><br />
+        Module: 6 (6 lectures)<br />
+        Need for dimensional analysis, methods of dimension analysis, Similitude and types of similitude,
+        Dimensionless parameters, application of dimensionless parameters Model analysis.
+        <br /><br />
+        Module: 7 (6 lectures)
+        Forces on immersed bodies, concepts of separation, drag force, circulation and lift force.
+        <br /><br />
+        <b>Text Books:</b><br />
+        1. Frank M. White, Fluid Mechanics (Sixth Edition), Tata McGraw-Hill, New Delhi (2008).<br />
+        2. J. O. Wilkes, Fluid Mechanics for Chemical Engineers, Prentice Hall (1999).<br />
+        3. Som and Biswas; Fluid Mechanics and machinery; TMH<br />
+        4. Cengal; Fluid Mechanics; TMH<br />
+        5. Modi & Seth; Fluid Mechanics; Standard Book House, Delhi<br />
+        <br />
+        <b>Practical:</b><br /><br />
+        1. Determination of density & viscosity of oil.<br />
+        2. To determine the meta-centric height of a floating body.<br />
+        3. Measurement of Coefficient of Discharge of given Orifice and Venturimeter<br />
+        4. To determine the coefficient of discharge of Notch (Vand Rectangular types)<br />
+        5. To determine the friction factor for the pipes.<br />
+        6. To verify the Bernoulli’s Theorem.<br />
+        7. To find critical Reynolds number for a pipe flow.<br />
+        8. To determine the minor losses due to sudden enlargement, sudden contraction and bends.<br />
+        9. To show the velocity and pressure variation with radius in a free and forced vortex<br /><br />
+        <b>*Atleast 8 experiments should be performed from above list</b><br /><br />
+        <b>Course Outcomes:</b><br /><br />
+        1. State the Newton’s law of viscosity and explain the mechanics of fluids at rest and in
+        motion by observing the fluid phenomena.<br />
+        2. Compute force of buoyancy on a partially or fully submerged body and analyze the stability
+        of a floating body.<br />
+        3. Derive Euler’s Equation of motion and deduce Bernoulli’s equation.<br />
+        4. Examine energy losses in pipe transitions and sketch energy gradient lines.<br />
+        5. Evaluate pressure drop in pipe flow using Hagen-Poiseuille’s equation.<br />
+        6. Distinguish the types of flows.
+
+    </p>
+</span>
+<br>
+
+<input type="button" onclick="return toggleMe('2')" value="Applied Thermodynamics" class="button"><br>
+<span id="2" style='display:none'>
+    <p> <br><b>Applied Thermodynamics</b><br />
+
+        <b>Objectives:</b><br />
+        1. To learn about of I law for reacting systems and heating value of fuels<br />
+        2. To learn about gas and vapor cycles and their first law and second law efficiencies<br />
+        3. To understand about the properties of dry and wet air and the principles of psychometric<br />
+        4. To learn about gas dynamics of air flow and steam through nozzles<br />
+        5. To learn the about reciprocating compressors with and without intercooling<br />
+        6. To analyze the performance of steam turbines<br />
+        <br />
+        Module 1: (8 lectures)<br />
+        Introduction to solid, liquid and gaseous fuels–Stoichiometry, exhaust gas analysis- First law
+        analysisof combustion reactions. Heat calculations using enthalpy tables. Adiabatic flame
+        temperature. Chemical equilibrium and equilibrium composition calculations using free energy.<br /><br />
+
+        Module 2: (10 lectures)<br />
+        Thermodynamic cycles, Gas power cycles: Air standard Otto, Diesel and Dual Cycles. Air standard Brayton
+        cycle, effect of reheat, regeneration and intercooling. Combined gas and vapor power cycles. Vapor
+        compression refrigeration cycles cycle and comparison with Carnot cycle, refrigerants and their
+        properties.<br /><br />
+
+        Module 3: (6 lectures)<br />
+        Vapor power cycles: Basic Rankine cycle, Rankine cycle with superheat, reheat and regeneration,
+        exergy analysis. Super- critical and ultra-super-critical Rankine cycle.<br /><br />
+
+        Module 4: (8 lectures)<br />
+        Basics of compressible flow. Stagnation properties, Isentropic flow of a perfect gas through a nozzle,
+        choked flow, subsonic and supersonic flows- normal shocks- use of ideal gas tables for isentropic
+        flow and normal shock flow- Flow of steam and refrigerant through nozzle, super saturationcompressible flow in
+        diffusers, efficiency of nozzle and diffuser.<br /><br />
+
+        Module 5: (5 lectures)<br />
+        Analysis of steam turbines, velocity and pressure compounding of steam turbines.<br /><br />
+
+        Module 6: (5 lectures)<br />
+        Reciprocating compressors, staging of reciprocating compressors, optimal stage pressure ratio, effect of
+        intercooling, minimum work for multistage reciprocating compressors.<br /><br />
+
+        <b>Text Books:</b><br />
+        1. Sonntag, R. E, Borgnakke, C. and Van Wylen, G. J., 2003, 6th Edition, Fundamentals of
+        Thermodynamics, John Wiley andSons.<br />
+        2. Jones, J. B. and Duggan, R. E., 1996, Engineering Thermodynamics, Prentice-Hall of India<br />
+        3. Moran, M. J. and Shapiro, H. N., 1999, Fundamentals of Engineering Thermodynamics,
+        John Wiley andSons.<br />
+        4. Nag, P. K, 1995, Engineering Thermodynamics, Tata McGraw-Hill Publishing Co. Ltd<br /><br />
+
+        <b>Outcomes:</b><br /><br />
+        1. After completing this course, the students will get a good understanding of various
+        practical power cycles and heat pump cycles.<br />
+        2. They will be able to analyze energy conversion in various thermal devices such as
+        combustors, air coolers, nozzles, diffusers, steam turbines and reciprocating compressors.3. They will be able
+        to understand phenomena occurring in high speed compressible flows.
+
+
+    </p>
+</span>
+<br>
+
+<input type="button" onclick="return toggleMe('3')" value="Strength of Materials" class="button"><br>
+<span id="3" style='display:none'>
+    <p> <br><b>Strength of Materials</b><br />
+
+        <b>Objectives:</b><br /><br />
+        1. To understand the nature of stresses developed in simple geometries such as bars,
+        cantilevers, beams, shafts, cylinders and spheres for various types of simple loads.<br />
+        2. To calculate the elastic deformation occurring in various simple geometries for different
+        types of loading.<br /><br />
+
+        Module :1 (8 lectures)<br />
+        Deformation in solids- Hooke’s law, stress and strain- tension, compression and shear stresseselastic constants
+        and their relations- volumetric, linear and shear strains- principal stresses and
+        principal planes- Mohr’s circle, theories of failure,<br /><br />
+
+        Module :2 (8 lectures)<br />
+        Beams and types transverse loading on beams- shear force and bend moment diagrams- Types of
+        beam supports, simply supported and over-hanging beams, cantilevers. Theory of bending of
+        beams, bending stress distribution and neutral axis, shear stress distribution, point and distributed
+        loads.<br /><br />
+
+        Module :3 (8 lectures)<br />
+        Moment of inertia about an axis and polar moment of inertia, deflection of a beam using double
+        integration method, computation of slopes and deflection in beams, Maxwell’s reciprocal
+        theorems.<br /><br />
+
+        Module :4 (8 lectures)<br />
+        Torsion, stresses and deformation in circular and hollow shafts, stepped shafts, deflection of shafts
+        fixed at both ends, stresses and deflection of helical springs.<br /><br />
+
+        Module :5 (8 lectures)<br />
+        Axial and hoop stresses in cylinders subjected to internal pressure, deformation of thick and thin
+        cylinders, deformation in spherical shells subjected to internal pressure.<br /><br />
+
+        <b>Text Books:</b><br />
+        1. Egor P. Popov, Engineering Mechanics of Solids, Prentice Hall of India, New Delhi,2001.<br />
+        2. R. Subramanian, Strength of Materials, Oxford University Press,2007.<br />
+        3. Ferdinand P. Been, Russel Johnson Jr. and John J. Dewole, Mechanics of Materials, Tata
+        GrawHill Publishing Co. Ltd., New Delhi2005.<br /><br />
+
+        <b>Practical:</b><br /><br />
+        1. Hooke’s Law<br />
+        2. Hardness Test: Rockwell, Brinell, Vicker<br />
+        3. Izod & Charpy Impact Test<br />
+        4. Bending Test<br />
+        5. Torsion Test<br />
+        6. Shear test<br />
+        7. Compressive strength test<br />
+        8. Fatigue Test<br />
+        9. Verification of Maxwell’s reciprocal theorem<br />
+        10. Continuous beam deflection test<br />
+        11. Strain Measurement<br /><br />
+        <b>*Atleast 8 experiments should be performed from above list</b><br /><br />
+
+        <b>Course Outcomes:</b><br /><br />
+        1. After completing this course, the students should be able to recognize various types
+        loads applied on machine components of simple geometry and understand the nature of
+        internal stresses that will develop within the components<br />
+        2. The students will be able to evaluate the strains and deformation that will result due to
+        the elastic stresses developed within the materials for simple types of loading
+
+    </p>
+</span>
+<br>
+
+<input type="button" onclick="return toggleMe('4')" value="Engineering Materials" class="button"><br>
+<span id="4" style='display:none'>
+    <p> <br><b>Engineering Materials</b><br />
+
+        <b>Objectives:</b><br /><br />
+        1. Understanding of the correlation between the internal structure of materials, their
+        mechanical properties and various methods to quantify their mechanical integrity and
+        failure criteria.<br />
+        2. To provide a detailed interpretation of equilibrium phase diagrams and Learning about
+        different phases and heat treatment methods to tailor the properties of Fe-C alloys.
+        Contents<br /><br />
+
+        Module:1 (6 lectures)<br />
+        Crystal Structure: Unit cells, Metallic crystal structures, Ceramics. Imperfection in solids: Point, line,
+        interfacial and volume defects; dislocation strengthening mechanisms and slip systems, critically
+        resolved shear stress.<br /><br />
+
+        Module:2 (8 lectures)<br />
+        Alloys, substitutional and interstitial solid solutions- Phase diagrams: Interpretation of binary phase
+        diagrams and microstructure development; eutectic, peritectic, peritectoid and monotectic
+        reactions. Iron Iron-carbide phase diagram and microstrctural aspects of ledeburite, austenite,
+        ferrite and cementite, cast iron.<br /><br />
+
+        Module: 3 (10 lectures)<br />
+        Mechanical Property measurement: Tensile, compression and torsion tests; Young’s modulus,
+        relations between true and engineering stress-strain curves, generalized Hooke’s law, yielding and
+        yield strength, ductility, resilience, toughness and elastic recovery; Hardness: Rockwell, Brinell and
+        Vickers and their relation to strength, Introduction to non-destructive testing (NDT).<br /><br />
+
+        Module: 4 (10 lectures)<br />
+        Heat treatment of Steel: Annealing, tempering, normalising and spheroidising, isothermal
+        transformation diagrams for Fe-C alloys and microstructure development. Continuous cooling
+        curves, T-T-T diagram and interpretation of final microstructures and properties- austempering,
+        martempering, case hardening, carburizing, nitriding, cyaniding, carbo-nitriding, flame and
+        induction hardening, vacuum and plasma hardening.<br /><br />
+
+        Module: 5 (8 lectures)Alloying of steel, properties of stainless steel and tool steels, maraging steels- cast
+        irons; grey,
+        white, malleable and spheroidal cast irons- copper and copper alloys; brass, bronze and cupronickel; Aluminium
+        and Al-Cu – Mg alloys- Nickel based superalloys and Titanium alloys.<br /><br />
+
+        <b>Text Books:</b><br /><br />
+        1. W. D. Callister, 2006, “Materials Science and Engineering-An Introduction”, 6th Edition, Wiley
+        India.<br />
+        2. Kenneth G. Budinski and Michael K. Budinski, “Engineering Materials”, Prentice Hall of India
+        Private Limited, 4th Indian Reprint, 2002.<br />
+        3. V. Raghavan, “Material Science and Engineering’, Prentice Hall of India Private Limited, 1999.<br />
+        4. U. C. Jindal, “Engineering Materials and Metallurgy”, Pearson, 2011.<br /><br />
+
+        <b>Course Outcomes:</b><br /><br />
+        1. Student will be able to identify crystal structures for various materials and understand the
+        defects in such structures<br />
+        2. Understand how to tailor material properties of ferrous and non-ferrous alloys<br />
+        3. How to quantify mechanical integrity and failure in materials
+
+    </p>
+</span>
+<br>
+
+<input type="button" onclick="return toggleMe('5')" value="Instrumentation and Control" class="button"><br>
+<span id="5" style='display:none'>
+    <p> <br><b>Instrumentation and Control</b><br />
+        <b>Objectives:</b><br /><br />
+        1. To provide a basic knowledge about measurement systems and their components<br />
+        2. To learn about various sensors used for measurement of mechanical quantities<br />
+        3. To learn about system stability and control<br />
+        4. To integrate the measurement systems with the process for process monitoring and control<br /><br />
+
+        Module: 1 (10 lectures)<br />
+        Measurement systems and performance -configuration of a measuring system, Methods for
+        correction for interfering and modifying inputs– accuracy, range, resolution, error sources,
+        precision, error sensitivity etc.Classification of errors and statistical analysis of experimental data.
+        <br /><br />
+
+        Module: 2 (8 lectures)<br />
+        Instrumentation system elements -sensors for common engineering measurements. Transducers
+        based on variable resistance, variable induction, variable capacitance and piezo-electric effects,
+        Displacement transducer.<br /><br />
+
+        Module: 3 (6 lectures)<br />
+        Signal processing and conditioning; correction elements- actuators: pneumatic, hydraulic, electric.
+        <br /><br />
+        Module :4 (10 lectures)<br />
+        Control systems – basic elements, open/closed loop, design of block diagram; control method – P,
+        PI, PID, when to choose what, tuning of controllers.<br /><br />
+
+        Module :5 (6 lectures)<br />
+        System models, transfer function and system response, frequency response; Nyquist diagrams and
+        their use.Practical group based project utilizing above concepts.<br /><br />
+
+        <b>Text Books:</b><br /><br />
+        1. Instrumentation and control systems by W. Bolton, 2nd edition, Newnes, 2000<br />
+        2. Thomas G. Beckwith, Roy D. Marangoni, John H. Lienhard V, Mechanical Measurements (6th
+        Edition) 6th Edition, Pearson Education India, 2007<br />
+        3. Gregory K. McMillan, Process/Industrial Instruments and Controls Handbook, Fifth Edition,
+        McGraw-Hill: New York, 1999.<br /><br />
+
+        <b>Course Outcomes:</b><br /><br />
+        Upon completion of this course, the students will be able to understand the measurement of
+        various quantities using instruments, their accuracy & range, and the techniques for controlling
+        devices automatically.
+
+    </p>
+</span>
+<br>
+
+
+<footer>Copyright: DCE-desk</footer>
+</body>
+
+</html>

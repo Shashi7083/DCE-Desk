@@ -59,24 +59,27 @@ class StartActivity : AppCompatActivity() {
 
             when(it.itemId){
                 R.id.starticon->{
-                    Toast.makeText(this@StartActivity,"About",Toast.LENGTH_LONG).show();
+                   // Toast.makeText(this@StartActivity,"About",Toast.LENGTH_LONG).show();
                     val intent = Intent(this@StartActivity,
                         com.shashi.shashi_dce_desk.Activity.AppInfoActivity::class.java)
                     startActivity(intent)
                 }
 
                 R.id.share->{
-                    var str = getString(R.string.share_app)
-                    var link = getString(R.string.app_link)
-                    val sendIntent: Intent = Intent().apply {
-                        action = Intent.ACTION_SEND
-                        putExtra(Intent.EXTRA_TEXT, str+" "+link)
-//                putExtra(Intent.EXTRA_TEXT,link)
-                        type = "text/plain"
-                    }
+//                    var str = getString(R.string.share_app)
+//                    var link = getString(R.string.app_link)
+//                    val sendIntent: Intent = Intent().apply {
+//                        action = Intent.ACTION_SEND
+//                        putExtra(Intent.EXTRA_TEXT, str+" "+link)
+////                putExtra(Intent.EXTRA_TEXT,link)
+//                        type = "text/plain"
+//
+//                    }
+//
+//                    val shareIntent = Intent.createChooser(sendIntent, null)
+//                    startActivity(shareIntent)
 
-                    val shareIntent = Intent.createChooser(sendIntent, null)
-                    startActivity(shareIntent)
+                    Toast.makeText(this@StartActivity,"Available Soon",Toast.LENGTH_SHORT).show()
                 }
 
                 R.id.report->{

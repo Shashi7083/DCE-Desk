@@ -18,76 +18,75 @@ Donload here."</string>
 
     <string name="jan">
         <font color="#A80000">01 Jan</font>  -  New Year\n\n
-        <font color="#A80000">09 Jan</font>   -   Guru Govind Singh Jayanti\n\n
         <font color="#A80000">15 Jan</font>   -   Makar Sankranti\n\n
         <font color="#A80000">26 Jan</font>   -   Republic Day\n\n
+        <font color="#A80000">26 Jan</font>   -   Wasant Panchami and Saraswati Puja\n
     </string>
 
     <string name="feb">
-        <font color="#A80000">05 Feb</font>   -   Wasant Panchami and Saraswati Puja\n\n
-        <font color="#A80000">16 Feb </font>  -   Sant.RaviDas Jayanti\n
+        <font color="#A80000">05 Feb</font>   -   Guru RaviDas Jayanti\n\n
+        <font color="#A80000">18 Feb </font>  -    Maha Shiv Ratri\n
     </string>
 
     <string name="mar">
-        <font color="#A80000">01 Mar</font>   -   Maha Shiv Ratri\n\n
-        <font color="#A80000">16-19 Mar</font>   -   Holi and Shab-ae-Baarat\n\n
-        <font color="#A80000">22 Mar</font>   -   Bihar Diwas\n
+        <font color="#A80000">06-11 Mar</font>   -   Holi and Shab-ae-Baarat\n\n
+        <font color="#A80000">22 Mar</font>   -   Bihar Diwas\n\n
+        <font color="#A80000">29 Mar</font>   -   Samrat Ashok Ahstami\n\n
+        <font color="#A80000">30 Mar</font>   -  Ramnavami\n
     </string>
 
     <string name="apr">
-         <font color="#A80000">09 Apr</font>   -   Samrat Ashok Ahstami\n\n
-         <font color="#A80000">10 Apr</font>   -   Ramnawami\n\n
-         <font color="#A80000">14 Apr</font>   -   Dr.Bhim Rao Ambedkar Jayanti , Mahavir Jayanti\n\n
-         <font color="#A80000">15 Apr</font>   -   Good Friday\n\n
+         <font color="#A80000">04 Apr</font>   -  Mahavir Jayanti\n\n
+         <font color="#A80000">07 Apr</font>   -   Good Friday\n\n
+         <font color="#A80000">14 Apr</font>   -   Dr.Bhim Rao Ambedkar Jayanti\n\n
+         <font color="#A80000">22 Apr</font>   -   Ed-ul-Fitar(Eid)\n\n
          <font color="#A80000">23 Apr </font>  -   Veer Kunwar Singh Jayanti\n\n
-         <font color="#A80000">29 Apr </font>  -   Ramjan Ka antim jumma\n
+         <font color="#A80000">29 Apr </font>  -   janki navmi\n
     </string>
 
     <string name="may">
         <font color="#A80000">01 May </font>  -   Labour Day\n\n
-        <font color="#A80000">03 - 04 May</font>   -   Ed-ul-Fitar(Eid)\n\n
-        <font color="#A80000">10 May </font>  -   Jaanki Nawami\n\n
-        <font color="#A80000">16 May </font>  -   Buddha Purnima\n
+        <font color="#A80000">05 May</font>   -  Buddha Purnima\n
+
     </string>
 
 
     <string name="jun">
-        <font color="#A80000">14 June</font>   -  Kabir Jayanti\n
+        <font color="#A80000">01 - 30 Jun</font>  -  Summer Vacation\n\n
+        <font color="#A80000">04 June</font>   -  Kabir Jayanti\n\n
+        <font color="#A80000">29 June</font>   - Bakrid\n
 
     </string>
 
     <string name="jul">
-          <font color="#A80000">10 - 11 July </font>  -  Ed-ul-Joha/Bakarid\n
+          <font color="#A80000">29 July </font>  -  Muharram\n
     </string>
 
     <string name="aug">
-         <font color="#A80000">9 Aug </font>  -    Murraham (9,10) 2 Days\n
-         <font color="#A80000">12 Aug </font>  -   Raksha Bandhan\n\n
          <font color="#A80000">15 Aug</font>   -   Independence Day\n\n
-         <font color="#A80000">19 Aug </font>  -   Shri Krishna Janmashtami\n
+         <font color="#A80000">30 Aug </font>  -   Raksha Bandhan(Rakhi)\n
     </string>
 
     <string name="sep">
-        <font color="#A80000">9 Sep</font>    -   Anant-Chaturdashi\n\n
-         <font color="#A80000">26 Sep </font>  -   Durga Puja Kalash Sthapana\n
+        <font color="#A80000">06 Sep</font>    -   Shri Krishn Janamashtami , Chehlum\n\n
+         <font color="#A80000">28 Sep </font>  -   Hazrat Muhammad Saheb Birthday\n
     </string>
 
     <string name="oct">
-          <font color="#A80000">02 - 06 Oct</font>  -   Mahatma Gandhi Jayanti / Durga Puja\n\n
-         <font color="#A80000">09 Oct </font>  -   Hajrat Mohammad Saheb Birthday\n\n
-         <font color="#A80000">24 Oct-01 Nov</font>  -   Diwali and Chitragupt Puja , Bhai Duj and Chhat Puja\n
+          <font color="#A80000">02 - 06 Oct</font>  -   Mahatma Gandhi\n\n
+         <font color="#A80000">21 -25 Oct </font>  -   Durga Puja\n
+
     </string>
 
 
     <string name="nov">
-          <font color="#A80000">24 Oct -01 Nov </font> -   Diwali and Chitragupt Puja , Bhai Duj and Chhat Puja\n\n
-        <font color="#A80000">08 Nov</font>   -   Gurunana Jayanti\n
+          <font color="#A80000">10 - 23 Nov </font> -   Diwali and Chitragupt Puja , Bhai Duj and Chhat Puja\n\n
+        <font color="#A80000">27 Nov</font>   -   Gurunana Jayanti\n
     </string>
 
 
     <string name="dec">
-        <font color="#A80000">03 Dec </font>  -   Dr Rajendra Prasad Jayanti\n\n
-         <font color="#A80000">24 - 25 Dec</font>  -  Christmas\n
+         <font color="#A80000">25 - 30 Dec</font>  -  Christmas\n
     </string>
     <string name="title_activity_maps">MapsActivity</string>
 

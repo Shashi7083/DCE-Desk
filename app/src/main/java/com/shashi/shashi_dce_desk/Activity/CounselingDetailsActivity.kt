@@ -77,7 +77,7 @@ class CounselingDetailsActivity : AppCompatActivity() {
             }
 
             if(key.equals("Holidays")){
-                supportActionBar?.title="Holidays 2022"
+                supportActionBar?.title="Holidays 2023"
                 //appbar.visibility = View.GONE
 
 //                val  fragment = HolidayFragment()

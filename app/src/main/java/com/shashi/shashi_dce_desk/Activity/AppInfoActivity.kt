@@ -6,6 +6,7 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.Toast
 
 import com.example.shashi_dce_desk.R
 
@@ -33,8 +34,9 @@ class AppInfoActivity : AppCompatActivity() {
                 type = "text/plain"
             }
 
-            val shareIntent = Intent.createChooser(sendIntent, null)
-            startActivity(shareIntent)
+//            val shareIntent = Intent.createChooser(sendIntent, null)
+//            startActivity(shareIntent)
+            Toast.makeText(this@AppInfoActivity,"Available Soon",Toast.LENGTH_SHORT).show()
         }
 
 

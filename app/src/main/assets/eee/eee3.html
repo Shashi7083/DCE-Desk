@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of Page -->
+    <title>EEE sem3</title>
+</head>
+
+<body id="top" oncontextmenu="return false" onselectstart="return false" ondragstart="return false"></body>
+
+<style type="text/css">
+    b {
+        /* below text is for Changing Heading of Syllaus inside button box */
+        color: rgb(72, 0, 255);
+        line-height: 2px;
+        font-size: medium;
+    }
+
+    .button {
+        background: #50ab7f;
+        width: 90%;
+        height: 60px;
+        border-radius: 10px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        color: rgb(255, 255, 255);
+
+        margin: auto;
+        display: block;
+        text-transform: none;
+        border: 1px solid transparent;
+    }
+
+    .button:active {
+        background-color: #0a82fb;
+    }
+
+
+    a {
+        text-decoration: none;
+    }
+
+    p {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #6e3062;
+        line-height: 20px;
+        font-size: 12px;
+        color: #34495e;
+    }
+
+    hr {
+        margin-top: -25px;
+    }
+
+    span {
+        color: rgb(0, 166, 255);
+        padding: 5px;
+    }
+
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #50ab7f;
+        color: rgb(255, 255, 255);
+        text-align: center;
+    }
+</style>
+
+<br />
+<br />
+
+<script type="text/javascript">
+    function toggleMe(a) {
+        var e = document.getElementById(a);
+        if (!e) return true;
+        if (e.style.display != "none") {
+            e.style.display = "none"
+        } else {
+            document.querySelectorAll(".text").forEach(b => b.style.display = "none");
+            e.style.display = "block"
+        }
+        return true;
+    }
+</script>
+
+
+<input type="button" onclick="return toggleMe('1')" value="Electrical Circuit Analysis" class="button"><br>
+<span id="1" style='display:none'>
+    <p> <br><b>Electrical Circuit Analysis</b><br />
+        <br /><br />
+
+
+
+
+        Analyse two port circuit behavior.
+        <br />
+        <span>MODULE 1: Network Theorems (9 Hours)</span><br />
+        Superposition theorem, Thevenin theorem, Norton theorem, Maximum power transfer theorem, Reciprocity
+        theorem, Compensation theorem. Analysis with dependent current and voltage sources.
+        Node and Mesh Analysis. Concept of duality and dual networks.
+        <br /><br />
+
+        <span>MODULE 2: Solution of First and Second order networks (8 Hours)</span><br />
+        Solution of first and second order differential equations for Series and parallel R-L, R-C, R-L-C
+        circuits, initial and final conditions in network elements, forced and free response, time constants, steady
+        state and transient state response.
+        <br /><br />
+        <span>MODULE 3: Sinusoidal steady state analysis (8 Hours)</span><br />
+        Representation of sine function as rotating phasor, phasor diagrams, impedances and admittances, AC
+        circuit analysis, effective or RMS values, average power and complex power. Three-phase
+        circuits. Mutual coupled circuits, Dot Convention in coupled circuits, Ideal Transformer.<br />
+        <br />
+        <span>MODULE 4: Electrical Circuit Analysis Using Laplace Transforms (8 Hours)</span><br />
+        Review of Laplace Transform, Analysis of electrical circuits using Laplace Transform for standard
+        inputs, convolution integral, inverse Laplace transform, transformed network with initial conditions. Transfer
+        function representation. Poles and Zeros. Frequency response (magnitude and phase plots), series and parallel
+        resonances
+        <br /><br />
+        <span>MODULE 5: Two Port Network and Network Functions (6 Hours)</span><br />
+        Two Port Networks, terminal pairs, relationship of two port variables, impedance parameters,
+        admittance parameters, transmission parameters and hybrid parameters, interconnections of two port networks.
+        <br /><br />
+        <span>MODULE 6: Network Topology and Graph Theory (3 Hours)</span><br />
+        Introductory concepts of network graphs, cut sets, loops, cut set and loop analysis.
+        <br /><br />
+        <b>Text Book / References:</b><br />
+        1. M. E. Van Valkenburg, “Network Analysis”, Prentice Hall, 2006.<br />
+        2. D. Roy Choudhury, “Networks and Systems”, New Age International Publications, 1998.<br />
+        3. W. H. Hayt and J. E. Kemmerly, “Engineering Circuit Analysis”, McGraw Hill Education,
+        2013.<br />
+        4. C. K. Alexander and M. N. O. Sadiku, “Electric Circuits”, McGraw Hill Education, 2004.<br />
+        5. K. V. V. Murthy and M. S. Kamath, “Basic Circuit Analysis”, Jaico Publishers, 1999.<br />
+
+
+    </p>
+</span>
+<br>
+
+
+<input type="button" onclick="return toggleMe('2')" value="Digital Electronics" class="button"><br>
+<span id="2" style='display:none'>
+    <p> <br><b>Digital Electronics</b><br />
+        <br /><br />
+
+
+
+        At the end of this course, students will demonstrate the
+        ability to<br />
+        1. Understand working of logic families and logic gates.<br />
+        2. Design and implement Combinational and Sequential logic circuits.<br />
+        3. Understand the process of Analog to Digital conversion and Digital to Analog
+        conversion.<br />
+        4. Be able to use PLDs to implement the given logical problem.<br /><br />
+
+
+        <span>MODULE 1: Fundamentals of Digital Systems and logic families (7Hours)</span><br />
+
+        Digital signals, digital circuits, AND, OR, NOT, NAND, NOR and Exclusive-OR
+        operations, Boolean algebra, examples of IC gates, number systems-binary, signed binary,
+        octal hexadecimal number, binary arithmetic, one’s and two’s complements arithmetic, codes,
+        error detecting and correcting codes, characteristics of digital lCs, digital logic families, TTL,
+        Schottky TTL and CMOS logic, interfacing CMOS and TTL, Tri-statelogic.<br />
+        <br />
+        <span>MODULE 2: Combinational Digital Circuits (7Hours)</span><br />
+
+        Standard representation for logic functions, K-map representation, simplification of logic
+        functions using K-map, minimization of logical functions. Don’t care conditions, Multiplexer,
+        De- Multiplexer/Decoders, Adders, Subtractors, BCD arithmetic, carry look ahead adder, serial
+        ladder, ALU, elementary ALU design, popular MSI chips, digital comparator,
+        paritychecker/generator, code converters, priority encoders, decoders/drivers for display devices,
+        Q-M method of function realization.<br />
+        <br />
+        <span>MODULE 3: Sequential circuits and systems (7Hours)</span><br />
+
+        A 1-bit memory, the circuit properties of Bistable latch, the clocked SR flip flop, J- KT and DTypes flip flops,
+        applications of flip flops, shift registers, applications of shift registers, serial to
+        parallel converter, parallel to serial converter, ring counter, sequence generator,
+        ripple(Asynchronous) counters, synchronous counters, counters design using flip flops, special
+        counter IC’s, asynchronous sequential counters, applications of counters.<br />
+        <br />
+        <span>MODULE 4: A/D and D/A Converters (7Hours)</span><br />
+
+        Digital to analog converters: weighted resistor/converter, R-2R Ladder D/A converter,
+        specifications for D/A converters, examples of D/A converter lCs, sample and hold
+        circuit, analog to digital converters: quantization and encoding, parallel comparator A/D
+        converter, successive approximation A/D converter, counting A/D converter, dual slope A/D
+        converter, A/D converter using voltage to frequency and voltage to time conversion,
+        specifications of A/D converters, example of A/D converter ICs<br />
+        <br />
+        <span>MODULE 5: Semiconductor memories and Programmable logic devices. (7Hours)</span><br />
+        Memory organization and operation, expanding memory size, classification and characteristics of
+        memories, sequential memory, read only memory (ROM), read and write memory (RAM),
+        content
+        addressable memory (CAM), charge de coupled device memory (CCD), commonly used
+        memory chips, ROM as a PLD, Programmable logic array, Programmable array logic,
+        complex Programmable logic devices (CPLDS), Field Programmable Gate Array (FPGA).
+        <br /><br />
+        <b>Text Book /References</b><br />
+
+        1. R. P. Jain, "Modern Digital Electronics", McGraw Hill Education, 2009.<br />
+        2. M. M. Mano, "Digital logic and Computer design", Pearson Education India, 2016.<br />
+        3. A. Kumar, "Fundamentals of Digital Circuits", Prentice Hall India, 2016.<br />
+
+
+
+    </p>
+</span>
+<br>
+
+<input type="button" onclick="return toggleMe('3')" value="Electrical Machines-I" class="button"><br>
+<span id="3" style='display:none'>
+    <p> <br><b>Electrical Machines-I</b><br />
+        <br /><br />
+
+
+
+
+
+
+
+
+
+        <b>Course Outcomes:</b><br />
+        At the end of this course, students will demonstrate the
+        ability to<br />
+        1. Understand the concepts of magnetic circuits.<br />
+        2. Understand the operation of dc machines.<br />
+        3. Analyse the differences in operation of different dc machine configurations.<br />
+        4. Analyse single phase and three phase transformers circuits.
+
+        <br /><br />
+        <span>MODULE 1:Magnetic fields and magnetic circuits (6 Hours)</span><br />
+
+
+        Review of magnetic circuits - MMF, flux, reluctance, inductance; review of Ampere Law
+        and Biot Savart Law; Visualization of magnetic fields produced by a bar magnet and a current
+        carrying coil -
+        through air and through a combination of iron and air; influence of highly permeable materials on
+        the magnetic flux lines.
+        <br /><br />
+
+        <span>MODULE 2: Electromagnetic force and torque (9 Hours)</span><br />
+        B-H curve of magnetic materials; flux-linkage vs current characteristic of magnetic circuits;
+        linear and nonlinear magnetic circuits; energy stored in the magnetic circuit; force as a partial
+        derivative of
+        stored energy with respect to position of a moving element; torque as a partial derivative of
+        stored energy with respect to angular position of a rotating element. Examples - galvanometer coil,
+        relay contact, lifting magnet, rotating element with eccentricity or saliency
+        <br /><br />
+        <bspan>MODULE 3: DC machines (8
+            Hours)</span><br />
+
+        Basic construction of a DC machine, magnetic structure - stator yoke, stator poles, polefaces or
+        shoes, air gap and armature core, visualization of magnetic field produced by the field
+        winding excitation with armature winding open, air gap flux density distribution, flux per pole,
+        induced EMF in an armature coil. Armature winding and commutation - Elementary armature coil
+        and commutator, lap and wave windings, construction of commutator, linear commutation
+        Derivation of back EMF equation, armature MMF wave, derivation of torque equation, armature
+        reaction, air gap flux density distribution with armature reaction.<br /><br />
+
+
+        <span>MODULE 4: Motoring and generation (12 Hours)</span><br />
+
+        Armature circuit equation for motoring and generation, Types of field excitations - separately
+        excited, shunt and series. Open circuit characteristic of separately excited DC generator, back
+        EMF
+        with armature reaction, voltage build-up in a shunt generator, critical field resistance and critical
+        speed. V-I characteristics and torque-speed characteristics of separately excited, shunt and series
+        motors. Speed control through armature voltage. Losses, load testing and back-to-back testing of
+        DC machines
+        <br /><br />
+
+        <span>MODULE 5: Transformers (12 Hours)</span><br /> 
+
+        Principle, construction and operation of single-phase transformers, equivalent circuit, phasor
+        diagram, voltage regulation, losses and efficiency Testing - open circuit and short circuit
+        tests,
+        polarity test, back-to-back test, separation of hysteresis and eddy current losses Three-phase
+        transformer - construction, types of connection and their comparative features, Parallel operation
+        of single-phase and three-phase transformers, Autotransformers - construction, principle,
+        applications and comparison with two winding transformer, Magnetizing current, effect of
+        nonlinear B-H curve of magnetic core material, harmonics in magnetization current, Phase
+        conversion - Scott connection, three-phase to six-phase conversion, Tap-changing transformers
+        - No-load and on-load tap-changing of transformers, Three-winding transformers. Cooling of
+        transformers.
+        <br />
+        <b>Text Book /References</b><br />
+
+        1. A. E. Fitzgerald and C. Kingsley, "Electric Machinery”, New York, McGraw
+        Hill Education,
+        2013.<br />
+        2. A. E. Clayton and N. N. Hancock, “Performance and design of DC machines”,
+        CBS Publishers,
+        2004.<br />
+        3. M. G. Say, “Performance and design of AC machines”, CBS
+        Publishers, 2002.<br />
+        4. P. S. Bimbhra, “Electrical Machinery”, Khanna
+        Publishers, 2011.<br />
+        5. I. J. Nagrath and D. P. Kothari, “Electric Machines”, McGraw Hill
+        Education, 2010.<br />
+
+
+
+
+    </p>
+</span>
+<br>
+
+
+
+<input type="button" onclick="return toggleMe('4')" value="Electrical Machines Laboratory" class="button"><br>
+<span id="4" style='display:none'>
+    <p> <br><b>Electrical Machines Laboratory</b><br />
+        <br /><br />
+
+
+
+       
+
+
+    </p>
+</span>
+<br>
+
+
+
+<input type="button" onclick="return toggleMe('5')" value="Electromagnetic Fields" class="button"><br>
+<span id="5" style='display:none'>
+    <p> <br><b>Electromagnetic Fields</b><br />
+        <br /><br />
+
+
+
+
+        <b>Course Outcomes:</b>
+        At the end of the course, students will demonstrate the
+        ability<br />
+        1. To understand the basic laws of electromagnetism.<br />
+        2. To obtain the electric and magnetic fields for simple configurations under
+        static conditions.<br />
+        3. To analyse time varying electric and magnetic fields.<br />
+        4. To understand Maxwell’s equation in different forms and different media.<br />
+        5. To understand the propagation of EM waves.
+        This course shall have Lectures and Tutorials. Most of the students find difficult to visualize
+        electric and magnetic fields. Instructors may demonstrate various simulation tools to visualize
+        electric and magnetic fields in practical devices like transformers, transmission lines and machines.<br />
+        <br />
+        <span>MODULE 1 : Review of Vector Calculus (6 Hours)</span><br /> 
+
+
+        Vector algebra-addition, subtraction, components of vectors, scalar and vector multiplications,
+        triple products, three orthogonal coordinate systems (rectangular, cylindrical and spherical).
+        Vector calculus-differentiation, partial differentiation, integration, vector operator del, gradient,
+        divergence a n d curl; integral theorems of vectors. Conversion of a vector from one
+        coordinate system to an other.<br /><br />
+
+        <span>MODULE 2 : Static Electric Field (6 Hours)</span><br /> 
+
+        Coulomb’s law, Electric field intensity, Electrical field due to point charges. Line, Surface
+        and Volume charge distributions. Gauss law and its applications. Absolute Electric potential,
+        Potential
+        difference, Calculation of potential differences for different configurations. Electric dipole,
+        Electrostatic Energy and Energy density.<br /><br />
+
+        <span>MODULE 3 : Conductors ,Dielectrics and Capacitance (6 Hours) </span> <br />
+
+        Current and current density, Ohms Law in Point form, Continuity of current, Boundary
+        conditions of
+        perfect dielectric materials. Permittivity of dielectric materials, Capacitance, Capacitance of
+        a two wire line, Poisson’s equation, Laplace’s equation, Solution of Laplace and Poisson’s
+        equation, Application of Laplace’s and Poisson’s equations.<br />
+        <br /><br />
+        <span>MODULE 4 : Static Magnetic Fields (5 Hours) </span><br /> 
+
+        Biot-Savart Law, Ampere Law, Magnetic flux and magnetic flux density, Scalar and
+        Vector
+        Magnetic potentials. Steady magnetic fields produced by current carrying
+        conductors.
+        <br /><br />
+        <span>MODULE 5: Magnetic Forces, Materials and Inductance (6 Hours)</span><br /><
+
+        Force on a moving charge, Force on a differential current element, Force between differential
+        current elements, Nature of magnetic materials, Magnetization and permeability, Magnetic
+        boundary conditions, Magnetic circuits, inductances and mutual inductances.
+        <br /><br />
+        <span>MODULE 6: Time Varying Fields and Maxwell's Equations(5 Hours)</span><br />
+
+        Faraday’s law for Electromagnetic induction, Displacement current, Point form of
+        Maxwell’s equation, Integral form of Maxwell’s equations, Motional Electromotive
+        forces. Boundary Conditions.
+        <br /><br />
+        <span>MODULE 7: Electromagnetic Waves (6 Hours)</span><br />
+
+        Derivation of Wave Equation, Uniform Plane Waves, Maxwell’s equation in Phasor form,235 | P a g e
+        Wave equation in Phasor form, Plane waves in free space and in a homogenous material. Wave
+        equation for a conducting medium, Plane waves in lossy dielectrics, Propagation in good
+        conductors, Skin effect. Poynting theorem.
+        <br /><br />
+        <span>MODULE 8: Transmission line (4 Hours)</span><br />
+
+        Introduction, Concept of distributed elements, Equations of voltage and current, Standing waves
+        and impedance transformation, Lossless and low-loss transmission lines, Power transfer on a
+        transmission line, Analysis of transmission line in terms of admittances, Transmission line
+        calculations with the help of Smith chart, Applications of transmission line, Impedance matching
+        using transmission lines.
+        <br />
+        <br />
+        <b>Text Book /References</b><br />
+
+        1. M. N. O. Sadiku, “Elements of Electromagnetics”, Oxford University Publication, 2014.<br />
+        2. A. Pramanik, “Electromagnetism - Theory and applications”, PHI Learning Pvt. Ltd, New
+        Delhi, 2009.<br />
+        3. A. Pramanik, “Electromagnetism-Problems with solution”, Prentice Hall India, 2012.<br />
+        4. G.W. Carter, “The electromagnetic field in its engineering aspects”, Longmans, 1954.<br />
+        5. W.J. Duffin, “Electricity and Magnetism”, McGraw Hill Publication, 1980.<br />
+        6. W.J. Duffin, “Advanced Electricity and Magnetism”, McGraw Hill, 1968.<br />
+        7. E.G. Cullwick, “The Fundamentals of Electromagnetism”, Cambridge University Press,
+        1966.<br />
+        8. B. D. Popovic, “Introductory Engineering Electromagnetics”, Addison-Wesley
+        Educational
+        Publishers, International Edition, 1971.<br />
+        9. W. Hayt, “Engineering Electromagnetics”, McGraw Hill Education, 2012.<br />
+
+
+
+
+    </p>
+</span>
+<br>
+
+<input type="button" onclick="return toggleMe('6')" value="Engineering Mechanics" class="button"><br>
+<span id="6" style='display:none'>
+    <p> <br><b>Engineering Mechanics</b><br />
+        <br /><br />
+
+
+
+
+
+
+        Course Outcomes:At the end of this course, students will demonstrate the ability to<br />
+        1. Understand the concepts of co-ordinate systems.<br />
+        2. Analyse the three-dimensional motion.<br />
+        3. Understand the concepts of rigid bodies.<br />
+        4. Analyse the free-body diagrams of different arrangements.<br />
+        5. Analyse torsional motion and bending moment.<br />
+
+        <br />
+
+        <span>MODULE 1:</span><br />
+
+
+        Introduction to vectors and tensors and coordinate systems; Vector and tensor algebra;
+        Indical notation; Symmetric and anti-symmetric tensors; Eigenvalues and Principal axes.
+
+        <br /><br />
+        <span>MODULE 2:</span><br />
+
+        Three-dimensional rotation: Euler’s theorem, Axis-angle formulation and Euler angles;
+        Coordinate transformation of vectors and tensors.
+
+        <br /><br />
+        <span>MODULE 3:</span><br />
+
+        Kinematics of rigid bodies: Dentition and motion of a rigid body; Rigid bodies as
+        coordinate systems; Angular velocity of a rigid body, and its rate of change; Distinction between
+        two-and three-dimensional rotational motion; Integration of angular velocity to find orientation;
+        Motion relative to a rotating rigid body: Five term acceleration formula.
+
+        <br /><br />
+        <span>MODULE 4:</span><br />
+
+        Kinetics of rigid bodies: Angular momentum about a point; Inertia tensor: Dentition
+        and computation, Principal moments and axes of inertia, Parallel and perpendicular axes
+        theorems; Mass
+
+        moment of inertia of symmetrical bodies, cylinder, sphere, cone etc., Area moment of inertia
+        and Polar moment of inertia, Forces and moments; Newton-Euler’s laws of rigid body motion.
+        <br /><br />
+
+        <span>MODULE 5:</span><br />
+
+        Free body diagrams; Examples on modelling of typical supports and joints and discussion
+        on the kinematic and kinetic constraints that they impose.
+        <br /><br />
+
+        <span>MODULE 6:</span><br />
+
+        Examples and problems. General planar motions. General 3-D motions. Free
+        precession, Gyroscopes, Rolling coin.
+
+        <br /><br />
+
+        <span>MODULE 7:</span><br />
+
+        Transverse loading on beams, shear force and bending moment in beams, analysis of
+        cantilevers,
+        simply supported beams and overhanging beams, relationships between loading, shear force
+        and bending moment, shear force and bending moment diagrams.
+        <br /><br />
+
+        <span>MODULE 8:</span><br />
+
+        Torsion of circular shafts, derivation of torsion equation, stress and deformation in circular
+        and hollow shafts.<br /><br />
+
+
+        <span>MODULE 9:</span><br />
+
+        Concept of Friction; Laws of Coulomb friction; Angle of Repose; Coefficient of friction.
+        <br /><br />
+        <span>Text Book /References</span><br />
+
+        1. J. L. Meriam and L. G. Kraige, “Engineering Mechanics: Dynamics”, Wiley, 2011.<br />
+        2. M. F. Beatty, “Principles of Engineering Mechanics”, Springer Science & Business<br />
+        Media, 1986.
+    </p>
+</span>
+<br>
+
+
+
+<footer>Copyright: DCE-desk</footer>
+</body>
+
+</html>

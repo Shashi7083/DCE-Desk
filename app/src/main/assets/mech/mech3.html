@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of Page -->
+    <title>Mech sem3</title>
+</head>
+
+<body id="top" oncontextmenu="return false" onselectstart="return false" ondragstart="return false"></body>
+
+<style type="text/css">
+    b {
+        /* below text is for Changing Heading of Syllaus inside button box */
+        color: rgb(72, 0, 255);
+        line-height: 2px;
+        font-size: medium;
+    }
+
+    .button {
+        background: #50ab7f;
+        width: 90%;
+        height: 60px;
+        border-radius: 10px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        color: rgb(255, 255, 255);
+
+        margin: auto;
+        display: block;
+        text-transform: none;
+        border: 1px solid transparent;
+    }
+
+    .button:active {
+        background-color: #0a82fb;
+    }
+
+
+    a {
+        text-decoration: none;
+    }
+
+    p {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #6e3062;
+        line-height: 20px;
+        font-size: 12px;
+        color: #34495e;
+    }
+
+    hr {
+        margin-top: -25px;
+    }
+
+    span {
+        color: rgb(0, 166, 255);
+        padding: 5px;
+    }
+
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #50ab7f;
+        color: rgb(255, 255, 255);
+        text-align: center;
+    }
+</style>
+
+<br />
+<br />
+
+<script type="text/javascript">
+    function toggleMe(a) {
+        var e = document.getElementById(a);
+        if (!e) return true;
+        if (e.style.display != "none") {
+            e.style.display = "none"
+        } else {
+            document.querySelectorAll(".text").forEach(b => b.style.display = "none");
+            e.style.display = "block"
+        }
+        return true;
+    }
+</script>
+
+
+
+<input type="button" onclick="return toggleMe('1')" value="Mathematics III
+(PDE, Probability & Statistics)" class="button"><br>
+<span id="1" style='display:none'>
+    <p> <br><b>Mathematics III
+            (PDE, Probability & Statistics)</b><br />
+        <br /><br />
+
+        <b>3L:1T:0P</b> <br /><b>4 credits</b>
+        <br /><br />
+
+        <b>Objectives:</b> <br /><br />
+        1. To introduce the solution methodologies for second order Partial Differential Equations with
+        applications in engineering
+        <br /><br />
+        2. To provide an overview of probability and statistics to engineers
+        Contents:
+        <br /><br />
+        Module 1: (14 lectures)
+        Definition of Partial Differential Equations, First order partial differential equations, solutions of first
+        order linear PDEs; Solution to homogenous and non-homogenous linear partial differential
+        equations of second order by complimentary function and particular integral method. Second-order
+        linear equations and their classification, Initial and boundary conditions, D'Alembert's solution of the
+        wave equation; Duhamel's principle for one dimensional wave equation. Heat diffusion and vibration
+        problems, Separation of variables method to simple problems in Cartesian coordinates. The
+        Laplacian in plane, cylindrical and spherical polar coordinates, solutions with Bessel functions and
+        Legendre functions. One dimensional diffusion equation and its solution by separation of variables.
+        <br /><br />
+
+        Module 2: (12 lectures)
+        Probability spaces, conditional probability, independence; Discrete random variables, Independent
+        random variables, the multinomial distribution, Poisson approximation to the binomial distribution,
+        infinite sequences of Bernoulli trials, sums of independent random variables; Expectation of
+        Discrete Random Variables, Moments, Variance of a sum, Correlation coefficient, Chebyshev's
+        Inequality. Continuous random variables and their properties, distribution functions and densities,
+        normal, exponential and gamma densities. Bivariate distributions and their properties, distribution
+        of sums and quotients, conditional densities, Bayes' rule.
+        <br /><br />
+        Module 3: (12 lectures)
+        Basic Statistics, Measures of Central tendency: Moments, skewness and Kurtosis - Probability
+        distributions: Binomial, Poisson and Normal - evaluation of statistical parameters for these three
+        distributions, Correlation and regression – Rank correlation. Curve fitting by the method of least
+        squares- fitting of straight lines, second degree parabolas and more general curves. Test of
+        significance: Large sample test for single proportion, difference of proportions, Tests for single
+        mean, difference of means, and difference of standard deviations. Test for ratio of variances - Chisquare test
+        for goodness of fit and independence of attributes.
+        <br /><br />
+        <b>Textbooks/References:</b><br /><br />
+        1. Erwin Kreyszig, Advanced Engineering Mathematics, 9thEdition, John Wiley & Sons, 2006.<br />
+        2. N.P. Bali and Manish Goyal, A text book of Engineering Mathematics, Laxmi Publications.<br />
+        3. P. G. Hoel, S. C. Port and C. J. Stone, Introduction to Probability Theory, Universal Book Stall.<br />
+        4. S. Ross, A First Course in Probability, 6th Ed., Pearson Education India,2002.
+        Course Outcomes:
+        Upon completion of this course, students will be able to solve field problems in engineering
+        involving PDEs. They can also formulate and solve problems involving random variables and apply
+        statistical methods for analyzing experimental data.
+
+
+
+
+    </p>
+</span>
+<br />
+<input type="button" onclick="return toggleMe('2')" value="Biology" class="button"><br>
+<span id="2" style='display:none'>
+    <p> <br><b>Biology</b><br />
+        <br /><br />
+        <b>2 (one hour) lectures and one (one hour)
+            tutorial per week. Only lecture hours are
+            shown</b> <br /><br />
+        Module 1: Introduction (2 lectures)
+        Purpose: To convey that Biology is as important a scientific discipline as Mathematics, Physics and
+        Chemistry
+        Bring out the fundamental differences between science and engineering by drawing a comparison
+        between eye and camera, Bird flying and aircraft. Mention the most exciting aspect of biology as an
+        independent scientific discipline. Why we need to study biology? Discuss how biological observations
+        of 18th Century that lead to major discoveries. Examples from Brownian motion and the origin of
+        thermodynamics by referring to the original observation of Robert Brown and Julius Mayor. These
+        examples will highlight the fundamental importance of observations in any scientific inquiry.
+
+        <br /><br />
+        Module 2: Classification (3 lectures)
+        Purpose: To convey that classification per seis not what biology is all about. The underlying criterion,
+        such as morphological, biochemical or ecological be highlighted.
+        Hierarchy of life forms at phenomenological level. A common thread weaves this hierarchy
+        Classification. Discuss classification based on (a) cellularity- Unicellular or multicellular (b)
+        ultrastructure- prokaryotes or eucaryotes. (c) energy and Carbon utilisation -Autotrophs, heterotrophs,
+        lithotropes (d) Ammonia excretion – aminotelic, uricoteliec, ureotelic (e) Habitata- acquatic or
+        terrestrial (e) Molecular taxonomy- three major kingdoms of life. A given organism can come under
+        different category based on classification. Model organisms for the study of biology come from
+        different groups. E. coli, S.cerevisiae, D. Melanogaster, C. elegance, A. Thaliana, M. musculus
+        <br /><br />
+        Module 3:Genetics (4 lectures)
+        Purpose: To convey that “Genetics is to biology what Newton’s laws are to Physical Sciences”
+        Mendel’s laws, Concept of segregation and independent assortment. Concept of allele. Gene mapping,
+        Gene interaction, Epistasis. Meiosis and Mitosis be taught as a part of genetics. Emphasis to be give
+        not to the mechanics of cell division nor the phases but how genetic material passes from parent to
+        offspring. Concepts of recessiveness and dominance. Concept of mapping of phenotype to genes.
+        Discuss about the single gene disorders in humans. Discuss the concept of complementation using
+        human genetics.
+        <br /><br />
+        Module 4: Biomolecules (4 lectures)
+        Purpose: To convey that all forms of life has the same building blocks and yet the manifestations are
+        as diverse as one can imagine
+        Molecules of life. In this context discuss monomeric units and polymeric structures. Discuss about
+        sugars, starch and cellulose. Amino acids and proteins. Nucleotides and DNA/RNA. Two carbon units
+        and lipids.
+        <br /><br />
+        Module 5: Enzymes (4 lectures)
+        Purpose: To convey that without catalysis life would not have existed on earth.
+        Enzymology: How to monitor enzyme catalysed reactions. How does an enzyme catalyze reactions?
+        Enzyme classification. Mechanism of enzyme action. Discuss at least two examples. Enzyme kinetics
+        and kinetic parameters. Why should we know these parameters to understand biology? RNA catalysis.
+
+        <br /><br />
+        Module 6: Information Transfer (4 lectures)
+        Purpose: The molecular basis of coding and decoding genetic information is universal
+        Molecular basis of information transfer. DNA as a genetic material. Hierarchy of DNA structure- from
+        single stranded to double helix to nucleosomes. Concept of genetic code. Universality and
+        degeneracy of genetic code. Define gene in terms of complementation and recombination.
+        <br /><br />
+        Module 7: Macromolecular analysis (5 lectures)
+        Purpose: How to ana
+        lyse biological processes at the reductionist level
+        Proteins- structure and function. Hierarch in protein structure. Primary secondary, tertiary and
+        quaternary structure. Proteins as enzymes, transporters, receptors and structural elements.
+        <br /><br />
+
+        Module 8: Metabolism (4 lectures)
+        Purpose: The fundamental principles of energy transactions are the same in physical and biological
+        world.
+        Thermodynamics as applied to biological systems. Exothermic and endothermic versus endergonic
+        and exergoinc reactions. Concept of Keqand its relation to standard free energy. Spontaneity. ATP as
+        an energy currency. This should include the breakdown of glucose to CO2 + H2O (Glycolysis and
+        Krebs cycle) and synthesis of glucose from CO2and H2O (Photosynthesis). Energy yielding and
+        energy consuming reactions. Concept of Energy charge
+
+        <br /><br />
+
+        Module 9: Microbiology (3 lectures)
+        Concept of single celled organisms. Concept of species and strains. Identification and classification
+        of microorganisms. Microscopy. Ecological aspects of single celled organisms. Sterilization and
+        media compositions. Growth kinetics.
+        <br /><br />
+        <b>References:</b><br /><br />
+        1. Biology: A global approach: Campbell, N. A. ; Reece, J. B.; Urr y, Lisa; Cain, M, L.; Wasser man, S.
+        A. ; Minorsk y, P. V.; Jackson, R. B. Pearson Education Ltd<br />
+        2. Outlines of Biochemistry, Conn, E.E; Stumpf, P.K; Bruening, G; Doi, R.H. John Wiley and Sons<br />
+        3. Principles of Biochemistry (V Edition), By Nelson, D. L.; and Cox, M. M.W.H. Freeman and
+        Company<br />
+        4. Molecular Genetics (Second edition), Stent, G. S.; and Calender, R. W.H. Freeman and company,
+        Distributed by Satish Kumar Jain for CBS Publisher<br />
+
+        5. Microbiology, Prescott, L.M J.P. Harley and C.A. Klein 1995. 2nd edition Wm, C. Brown
+        Publishers<br /><br />
+        <b>Course Outcomes:</b><br /><br />
+        After studying the course, the student will be able to:
+        Describe how biological observations of 18th Century that lead to major discoveries. Convey that
+        classification per se is not what biology is all about but highlight the underlying criteria, such as
+        morphological, biochemical and ecological Highlight the concepts of recessiveness and dominance
+        during the passage of genetic material from parent to offspring Convey that all forms of life have the
+        same building blocks and yet the manifestations are as diverse as one can imagine Classify enzymes
+        and distinguish between different mechanisms of enzyme action. Identify DNA as a genetic material
+        in the molecular basis of information transfer. Analyse biological processes at the reductionistic level
+        Apply thermodynamic principles to biological systems. Identify and classify microorganisms.
+
+    </p>
+</span>
+<br />
+
+
+<input type="button" onclick="return toggleMe('3')" value="Basic Electronic Engineering" class="button"><br>
+<span id="3" style='display:none'>
+    <p> <br><b>Basic Electronic Engineering</b><br />
+        <br /><br />
+        <b>3L:1T:0P</b><br><b> 4 credits</b>
+        <br /><br />
+
+        <b>Objectives:</b><br /><br />
+        To provide an overview of electronic device components to Mechanical engineering students
+        Contents:<br /><br />
+        Module 1: (10 lectures)
+        Semiconductor Devices and Applications: Introduction to P-N Junction Diode and V-I characteristics,
+        Half wave and Full-wave rectifiers, capacitor filter. Zener diode and its characteristics, Zener diode as
+        voltage regulator. Regulated power supply IC based on 78XX and 79XX series, Introduction to BJT, its
+        input-output and transfer characteristics, BJT as a single stage CE amplifier, frequency response and
+        bandwidth.
+        <br /><br />
+        Module 2: (8 lectures)
+        Operational amplifier and its applications: Introduction to operational amplifiers, Op-amp input modes
+        and parameters, Op-amp in open loop configuration, op-amp with negative feedback, study of
+        practical op-amp IC 741, inverting and non-inverting amplifier applications: summing and difference
+        amplifier, unity gain buffer, comparator, integrator and differentiator.
+        <br /><br />
+
+        Module 3: (6 lectures)
+        Timing Circuits and Oscillators: RC-timing circuits, IC 555 and its applications as table and monostable
+        multi-vibrators, positive feedback, Barkhausen's criteria for oscillation, R-C phase shift and
+        Wein bridge oscillator.
+        <br /><br />
+        Module 4: (10 lectures)
+        Digital Electronics Fundamentals: Difference between analog and digital signals, Boolean algebra,
+        Basic and Universal Gates, Symbols, Truth tables, logic expressions, Logic simplification using Kmap,
+        Logic ICs, half and full adder/subtractor, multiplexers, de-multiplexers, flip-flops, shift registers,
+        counters, Block diagram of microprocessor/microcontroller and their applications.
+        <br /><br />
+        Module 5: (8 lectures)
+        Electronic Communication Systems: The elements of communication system, IEEE frequency
+        spectrum, Transmission media: wired and wireless, need of modulation, AM and FM modulation
+        schemes, Mobile communication systems: cellular concept and block diagram of GSM system.
+        <br /><br />
+        <b>Text /Reference Books:</b><br /><br />
+        1. Floyd ,” Electronic Devices” Pearson Education 9th edition, 2012.<br />
+        2. R.P. Jain , “Modern Digital Electronics”, Tata Mc Graw Hill, 3rd Edition, 2007.<br />
+        3. Frenzel, “Communication Electronics: Principles and Applications”, Tata Mc Graw Hill, 3rd
+        Edition, 2001<br />
+        <b>Course Outcomes:</b><br />
+        At the end of this course students will demonstrate the ability to:<br />
+        1. Understand the principles of semiconductor devices and their applications.<br />
+        2. Design an application using Operational amplifier.<br />
+        3. Understand the working of timing circuits and oscillators.<br />
+        4. Understand logic gates, flip flop as a building block of digital systems.<br />
+        5. Learn the basics of Electronic communication system.
+
+    </p>
+</span>
+<br />
+
+
+<input type="button" onclick="return toggleMe('4')" value="Engineering Mechanics " class="button"><br>
+<span id="4" style='display:none'>
+    <p> <br><b>Engineering Mechanics </b><br />
+        <br /><br />
+        <b>3L:0T:2P</b><br /><b> 4 credits</b>
+        <br /><br />
+
+        <b>Objectives:</b><br /><br />
+        The primary purpose of the study of engineering mechanics is to develop the capacity to predict the
+        effects of force and motion while carrying out the creative design functions of engineering.
+        Contents:
+        <br /><br />
+        Module 1: (7 lectures)
+        Statics: Force System, Moment of a force about a point and an axis; Equivalent force and moment
+        <br /><br />
+        Module 2: (6 lectures)
+        Equilibrium: Free body diagram; equations of equilibrium; problems in two and three dimension; plane
+        frames and trusses.
+        <br /><br />
+        Module 3: (8 lectures)
+        Friction: Laws of Coulomb friction, impending motion problems involving large and small contact
+        surfaces; square threaded screw; principle of virtual work and stability.
+        <br /><br />
+        Module 4: (6 lectures)
+        Dynamics: Kinematics and kinetics of particles dynamics in rectangular coordinates cylindrical
+        coordinates and in terms of path variables.
+        <br /><br />
+        Module 5: (8 lectures)
+        Properties of areas: Center of mass; Moments of inertia; kinematics of rigid bodies;Chasle’s Theorem,
+        concept of fixed vector, velocity and acceleration of particles in different frames of references.
+        General plane motion.
+        <br /><br />
+        Module 6: (7 lectures)
+        Work & Energy and impulse and Momentum methods for particles and rigid bodies: Conservation of
+        momentum, coefficient of restitution, moment of momentum equation.
+        <br /><br />
+        <b>Text /Reference Books:</b><br /><br />
+        1. Engineering Mechanics by Shames, Pearson’s Education.<br />
+        2. Mechanics for Engineers. Beer, F.P. and Johnston. Tata McGraw Hill. New Delhi<br />
+        3. Engineering mechanics. Meriam Wiley pub.<br />
+        4. Engineering Mechanics. Timoshenko. McGraw Hill lnc.
+        <br /><br />
+        <b>Practical:</b><br /><br />
+        1. Practical based on mechanical advantage of different machines.<br />
+        2. Verification of triangle law & parallelogram law of forces<br />
+        3. Verification of polygon law of forces<br />
+        4. Determination of moment of inertia of a flywheel<br />
+        5. Crank Lever apparatus<br />
+        6. Verification of support reactions of a simply supported beam<br />
+        7. Verification of condition of equilibrium of a system of forces<br />
+        8. Verification of axial forces in the members of a truss<br />
+        9. Verification of equilibrium of three dimensional forces.<br />
+        10.Determination of coefficient of friction between two surfaces<br />
+        11.Verification of centroid of different laminae<br />
+        12.Verification of Newton’s laws of motion<br />
+        <br /><br /><b>
+            * At least 6 experiments should be performed from above list.
+            Course outcomes:</b><br />
+        Students will be able to articulate and describe:<br />
+        1. Relative motion. Inertial and non-inertial reference frames.<br />
+        2. Parameters defining the motion of mechanical systems and their degrees of freedom.<br />
+        3. Study of the interaction of forces between solids in mechanical systems.<br />
+        4. Centre of mass and inertia tensor of mechanical systems.<br />
+        5. Application of the vector theorems of mechanics and interpretation of their results.<br />
+        6. Newton’s laws of motion and conservation principles.<br />
+    </p>
+</span>
+<br />
+
+<input type="button" onclick="return toggleMe('5')" value="Thermodynamics " class="button"><br>
+<span id="5" style='display:none'>
+    <p> <br><b>Thermodynamics </b><br />
+        <br /><br />
+        <b>3L:1T:0P</b><br /> <b>4 credits</b>
+        <br /><br />
+        <b>Objectives:</b><br /><br />
+        1. To learn about work and heat interactions, and balance of energy between system and its<br />
+        2. Surroundings<br />
+        3. To learn about application of 1 st law to various energy conversion devices<br />
+        4. To evaluate the changes in properties of substances in various processes<br />
+        5. To understand the difference between high grade and low grade energies and 2nd law
+        limitations on energy conversion<br />
+        <b>Contents:</b><br /><br />
+        Module 1: (5 lectures)
+        Fundamentals - System & Control volume; Property, State & Process; Exact & Inexact differentials;
+        Work-Thermodynamic definition of work; examples; Displacement work; Path dependence of
+        displacement work and illustrations for simple processes; electrical, magnetic, gravitational, spring
+        and shaft work.
+        <br /><br />
+        Module 2: (5 lectures)
+        Temperature, Definition of thermal equilibrium and Zeroth law; Temperature scales; Various
+        Thermometers- Definition of heat; examples of heat/work interaction in systems- First Law for
+        Cyclic & Non-cyclic processes; Concept of total energy E; Demonstration that E is a property;
+        Various modes of energy, Internal energy and Enthalpy.
+        <br /><br />
+        Module 3: (8 lectures)
+        Definition of Pure substance, Ideal Gases and ideal gas mixtures, Real gases and real gas mixtures,
+        Compressibility charts- Properties of two phase systems - Const. temperature and Const. pressure heating of
+        water; Definitions of saturated states; P-v-T surface; Use of steam tables; Saturation tables; Superheated
+        tables; Identification of states & determination of properties, Mollier’s chart.
+        <br /><br />
+        Module 4: (5 lectures)
+        First Law for Flow Processes - Derivation of general energy equation for a control volume; Steady state steady
+        flow processes including throttling; Examples of steady flow devices; Unsteady processes; examples of steady
+        and unsteady I law applications for system and control volume.
+        <br /><br />
+        Module 5: (5 lectures)
+        Second law - Definitions of direct and reverse heat engines; Definitions of thermal efficiency and COP;
+        KelvinPlanck and Clausius statements; Definition of reversible process; Internal and external irreversibility;
+        Carnot
+        cycle; Absolute temperature scale.
+        <br /><br />
+        Module 6: (8 lectures)
+        Clausius inequality; Definition of entropy S ; Demonstration that entropy S is a property; Evaluation of
+        Entropy for solids, liquids, ideal gases and ideal gas mixtures undergoing various processes;
+        Determination of entropy from steam tables-Principle of increase of entropy; Illustration of processes
+        in T-s coordinates; Definition of Isentropic efficiency for compressors, turbines and nozzlesIrreversibility and
+        Availability, Availability function for systems and Control volumes undergoing
+        different processes, Lost work. Second law analysis for a control volume. Exergy balance equation and
+        Exergy analysis.
+        <br /><br />
+        Module 7: (4 lectures)
+        Properties of dry and wet air, use of psychometric chart, processes involving heating/cooling and
+        humidification/dehumidification, dew point.
+        <br /><br />
+        <b>Text Books:</b><br /><br />
+        1. Sonntag, R. E, Borgnakke, C. and Van Wylen, G. J., 2003, 6th Edition, Fundamentals of
+        Thermodynamics, John Wiley and Sons.<br />
+        2. Jones, J. B. and Duggan, R. E., 1996, Engineering Thermodynamics, Prentice-Hall of India<br />
+        3. Moran, M. J. and Shapiro, H. N., 1999, Fundamentals of Engineering Thermodynamics, John
+        Wiley and Sons.<br />
+        4. Yunus A. Cengel; Michael A. Boles, Thermodynamics: An Engineering Approach, McGraw-Hill.<br />
+        5. Nag, P.K, 1995, Engineering Thermodynamics, Tata McGraw-Hill Publishing Co. Ltd.<br />
+        <b>Course Outcomes:</b>
+        1. After completing this course, the students will be able to apply energy balance to systems and
+        control volumes, in situations involving heat and work interactions<br />
+        2. Students can evaluate changes in thermodynamic properties of substances<br />
+        3. The students will be able to evaluate the performance of energy conversion devices<br />
+        4. The students will be able to differentiate between high grade and low grade energies.<br />
+
+    </p>
+</span>
+<br />
+<input type="button" onclick="return toggleMe('6')" value="Machine Drawing" class="button"><br>
+<span id="6" style='display:none'>
+    <p> <br><b>Machine Drawing</b><br />
+        <br /><br />
+        <b>Objective:</b><br /><br />
+        The student will acquire a knowledge of fastening arrangements such as welding, riveting the
+        different styles of attachment for shaft. The student also is enabled to prepare the assembly of
+        various machine or engine components and miscellaneous machine components.
+        <br /><br />
+        Module 1: (2 Lectures)
+        Introduction to full section, half section, revolved-section off-set section.
+        <br /><br />
+        Module 2: (3 Lectures)
+        Nut Bolts, Riveted joints, Thread profiles, Screw jack.
+        <br /><br />
+        Module3: (3 Lectures)
+        Bushed bearing, pedestal, bearing, foot step bearing.
+        <br /><br />
+        Module 4: (2 Lectures)
+        Flanged coupling, flexible coupling, solid coupling.
+        <br /><br />
+        Module5: (2 Lectures)
+        Engine parts - Stuffing box, Connecting rod, Atomizer, spark plug, etc.
+        <br /><br />
+        Module 6: (2 Lectures)
+        Eccentric.
+        <br /><br />
+        Module 7: (2 Lectures)
+        Cross Head.
+        <br /><br />
+        Module 8: (2 Lectures)
+        Assembly of dissembled parts. disassembly of assembly parts.
+        <br /><br />
+        <b>Text Books:</b><br /><br />
+        1. Dhawan, R.K., A Text Book of Machine Drawing, S. Chand & Company, 1996.<br />
+        2. Ostrowsky, O., Engineering Drawing with CAD Applications, ELBS, 1995.<br />
+        3. Engineering Drawing Practice for Schools and Colleges SP: 46- 19<br />
+        4. Engineering Drawing by ND Bhatt<br />
+        <b>Course Outcomes:</b><br />
+        On successful completion of the course, the student will be able to,
+        1. Identify the national and international standards pertaining to machine drawing.<br />
+        2. Apply limits and tolerances to assemblies and choose appropriate fits.<br />
+        3. Recognize machining and surface finish symbols.<br />
+        4. Explain the functional and manufacturing datum.<br />
+
+    </p>
+</span>
+<br />
+
+
+<footer>Copyright: DCE-desk</footer>
+</body>
+
+</html>
